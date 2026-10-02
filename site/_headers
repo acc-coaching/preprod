@@ -1,0 +1,14 @@
+# En-têtes de sécurité, pour toutes les pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Adresse provisoire de relecture : jamais indexée par les moteurs
+https://acc-coaching.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Polices et images : mises en cache longue durée
+/assets/*
+  Cache-Control: public, max-age=2592000
