@@ -2,21 +2,22 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex"><!-- provisoire : à retirer au branchement du domaine -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Références clients — coaching de dirigeants | ACC</title>
-<link rel="canonical" href="https://www.acc-coaching.fr/references">
+<title>Qualité et certification Qualiopi | ACC</title>
+<link rel="canonical" href="https://www.acc-coaching.fr/qualiopi">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="ACC — Andreu Coaching &amp; Conseil">
-<meta property="og:title" content="Références clients — coaching de dirigeants | ACC">
-<meta property="og:description" content="Banque, luxe, énergie, tech, cabinets d'avocats : plus de 500 dirigeants, managers et talents accompagnés depuis 2019 par Christophe Andreu, executive coach ICF PCC.">
-<meta property="og:url" content="https://www.acc-coaching.fr/references">
+<meta property="og:title" content="Qualité et certification Qualiopi | ACC">
+<meta property="og:description" content="Certificat Qualiopi n° 348711-1 délivré par CERTIFOPAC, indicateurs de satisfaction, référent handicap et procédure de réclamation.">
+<meta property="og:url" content="https://www.acc-coaching.fr/qualiopi">
 <meta property="og:image" content="https://www.acc-coaching.fr/assets/img/partage-acc.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="description" content="Banque, luxe, énergie, tech, cabinets d'avocats : plus de 500 dirigeants, managers et talents accompagnés depuis 2019 par Christophe Andreu, executive coach ICF PCC.">
+<meta name="description" content="Certificat Qualiopi n° 348711-1 délivré par CERTIFOPAC, indicateurs de satisfaction, référent handicap et procédure de réclamation.">
 <link rel="preload" href="assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/polices.css">
 <style>
@@ -316,8 +317,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .texte h3 { font-size: clamp(22px, 2vw, 27px); margin-top: 40px !important; }
 .bloc { border-top: 1px solid var(--filet); padding: clamp(48px, 7vw, 88px) 0; scroll-margin-top: 80px; }
 
-.bio { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
-.bio img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; object-position: center 30%; border-radius: 999px 999px 14px 14px; background: #FFFFFF; }
+.bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
+.bio img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 14px; }
 .bio h3 { font-family: var(--sans); font-size: 15px !important; font-weight: 700; color: var(--texte-2); margin: 0 0 10px !important; }
 .bio p { font-size: 17px; line-height: 1.65; }
 @media (max-width: 760px) { .bio { grid-template-columns: 1fr; } .bio img { max-width: 240px; margin: 0 auto; } }
@@ -349,6 +350,32 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .coordonnees .nom { font-family: var(--serif); font-size: 22px; border-top: 0; padding-top: 0; }
 @media (max-width: 960px) { .contact-grille { grid-template-columns: 1fr; } .coordonnees { position: static; } }
 
+
+/* Pages réglementaires */
+.reg { padding-bottom: clamp(56px, 8vw, 96px); }
+.reg-grille { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.reg-nav { position: sticky; top: 100px; background: var(--surface); border-radius: 16px; padding: 24px; }
+.reg-nav h2 { font-family: var(--sans); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-2); margin-bottom: 8px; }
+.reg-nav a { display: block; padding: 9px 0; font-size: 16px; color: var(--graphite); text-decoration: none; border-top: 1px solid var(--filet-doux); }
+.reg-nav a:hover { color: var(--accent); }
+.reg-nav a[aria-current="page"] { font-weight: 700; color: var(--accent); }
+@media (max-width: 860px) { .reg-grille { grid-template-columns: 1fr; } .reg-nav { position: static; } }
+
+.reg-corps { max-width: 44em; }
+.reg-corps > * + * { margin-top: 18px; }
+.reg-corps h2 { font-size: clamp(24px, 2.4vw, 32px); margin-top: 48px !important; }
+.reg-corps h2:first-child { margin-top: 0 !important; }
+.reg-corps h3 { font-size: 20px; margin-top: 28px !important; }
+.reg-corps .liste { margin-top: 12px; }
+.maj-page { font-size: 14px; color: var(--texte-2); }
+.a-completer { background: #FFF4D6; color: #4A3A00; border-radius: 4px; padding: 0 6px; }
+
+.qualiopi-tete { display: flex; align-items: center; gap: 28px; background: var(--surface); border-radius: 16px; padding: 24px 28px; flex-wrap: wrap; }
+.qualiopi-tete img { height: 96px; width: auto; background: #FFFFFF; border-radius: 6px; padding: 8px; }
+.qualiopi-tete p { font-size: 16px; line-height: 1.5; min-width: 260px; flex: 1; }
+
+.reg-corps .tableau td { white-space: normal; }
+.reg-corps .tableau td:first-child { white-space: nowrap; width: 200px; }
 .badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .badges img { background: #FFFFFF; border-radius: 8px; padding: 6px; height: 58px; width: auto; display: block; }
 .badges .logo-q { height: 46px; padding: 6px 8px; }
@@ -360,6 +387,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .badges { display: flex; gap: 10px; width: 100%; max-width: 320px; align-items: flex-start; }
 .badges .badge { display: block; box-sizing: border-box; min-width: 0; padding: 6px; background: #FFFFFF; border-radius: 8px; }
 .badges .badge img, .badges .badge img.logo-q { display: block; width: 100% !important; height: auto !important; max-width: none; padding: 0 !important; background: none !important; border-radius: 0 !important; }
+
+/* Tableaux : retour à la ligne plutôt que défilement horizontal */
+@media (min-width: 641px) {
+  .tableau table { min-width: 0; }
+  .tableau td, .tableau th { white-space: normal; }
+  .tableau td:first-child { white-space: normal; min-width: 9em; }
+  .tableau td:last-child { white-space: normal; }
+}
 </style>
 </head>
 <body>
@@ -372,7 +407,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
     <nav class="nav" id="menu" aria-label="Navigation principale">
       <a href="/approche">L'approche</a>
       <a href="/offres">Offres</a>
-      <a href="/references" aria-current="page">Références</a>
+      <a href="/references">Références</a>
       <a href="/contact">Contact</a>
       <a class="btn" href="https://calendly.com/christophe-andreu/30min/" target="_blank" rel="noopener">Prendre rendez-vous</a>
     </nav>
@@ -388,69 +423,85 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 <main id="contenu">
   <div class="conteneur">
     <nav class="fil" aria-label="Fil d'Ariane">
-      <ol><li><a href="/">Accueil</a></li><li aria-current="page">Références</li></ol>
+      <ol><li><a href="/">Accueil</a></li><li aria-current="page">Qualité et certification Qualiopi</li></ol>
     </nav>
   </div>
 
   <section class="tete-page">
     <div class="conteneur">
-      <h1>Ils m'ont fait confiance</h1>
-      <p class="chapeau">Depuis 2019, j'ai accompagné plus de 500 dirigeants, managers et talents, dans de grands groupes comme dans des scale-ups, en France et à l'international.</p>
+      <h1>Qualité et certification Qualiopi</h1>
+      <p class="maj-page">Dernière mise à jour : septembre 2026.</p>
     </div>
   </section>
 
-  <div class="conteneur">
-    <div class="secteurs">
-      <div class="secteur"><h3>Banque, assurance, investissement</h3><p>AXA · Allianz · Generali · Crédit Agricole · Société Générale · HSBC · AEW · Keensight</p></div>
-      <div class="secteur"><h3>Conseil et cabinets d'avocats</h3><p>BearingPoint · Capgemini · Deloitte · Pearls Consulting · A&amp;O Shearman · Reed Smith · Ooslo</p></div>
-      <div class="secteur"><h3>Tech, digital, télécoms</h3><p>Google · Amazon · Meta · Orange · Worldline · PayFit · PrestaShop · Mediarithmics</p></div>
-      <div class="secteur"><h3>Luxe, consommation, distribution</h3><p>LVMH · Moët &amp; Chandon · Hermès · L'Oréal · Pernod Ricard · Heineken · Carrefour · Cafés Richard · Eurial · JJA</p></div>
-      <div class="secteur"><h3>Énergie, industrie, construction</h3><p>EDF · Enedis · TotalEnergies · Veolia · Saint-Gobain · Michelin · Safran · EIT Manufacturing · Hilti · Vinci · Bouygues</p></div>
-      <div class="secteur"><h3>Services, santé, éducation</h3><p>Accor · Sanofi · Vivalto Santé · EPITA · École polytechnique · Fondation Ellen Poidatz</p></div>
-    </div>
-  </div>
+  <div class="conteneur reg">
+    <div class="reg-grille">
+      <nav class="reg-nav" aria-label="Pages d'information">
+        <h2>Informations</h2>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/confidentialite">Politique de confidentialité</a>
+        <a href="/qualiopi" aria-current="page">Qualité et certification Qualiopi</a>
+        <a href="/accessibilite">Accessibilité</a>
+      </nav>
 
-  <section class="bloc" style="margin-top: clamp(48px, 7vw, 88px);" aria-labelledby="t-avis">
-    <div class="conteneur">
-      <h2 id="t-avis" class="titre-section" style="margin-bottom: 32px;">Ce qu'en disent mes clients</h2>
-      <div class="avis">
-        <figure>
-          <blockquote>« Christophe est un coach doté d'une intelligence émotionnelle exceptionnelle et d'une profonde connaissance du milieu des affaires. Il construit un accompagnement sur mesure, en prenant en compte la personne en face de lui, et m'a proposé des actions concrètes pour développer mon management transversal et mon influence sur le changement. Ce qui m'a le plus impressionné est sa capacité à comprendre rapidement l'environnement systémique et à structurer le projet de développement de manière claire et actionnable. »</blockquote>
-          <figcaption><strong>Membre de comité exécutif</strong>Secteur bancaire<p class="themes">Conduite du changement · Influence · Stratégie</p></figcaption>
-        </figure>
-        <figure>
-          <blockquote>« J'ai eu le privilège d'être coachée par Christophe et je ne peux que souligner la qualité exceptionnelle de son coaching. Christophe se distingue par sa bienveillance, créant un environnement de confiance propice au dialogue. Son expertise solide dans le secteur digital et IT a facilité notre collaboration, en comprenant rapidement les défis spécifiques que je rencontrais. Sa capacité d'écoute est remarquable, chaque session étant un espace d'expression libre et de synthèse claire de mes idées et émotions. »</blockquote>
-          <figcaption><strong>Dirigeante</strong>Secteur IT<p class="themes">Communication · Délégation · Management des talents</p></figcaption>
-        </figure>
-        <figure>
-          <blockquote>« J'ai eu la chance d'être accompagnée par Christophe dans ma transition pour rejoindre le COMEX du groupe. Son approche bienveillante et structurée m'a aidée à clarifier ma vision stratégique et à renforcer mon influence auprès des instances dirigeantes. Christophe a su poser les bonnes questions pour m'amener à identifier mes priorités, développer mon leadership et relever les défis globaux avec sérénité. Grâce à son expertise et à son écoute, j'ai pu aborder cette évolution avec confiance et alignement. »</blockquote>
-          <figcaption><strong>Membre de comité exécutif</strong>Groupe industriel international<p class="themes">Ambition · Confiance · Priorisation</p></figcaption>
-        </figure>
+      <div class="reg-corps">
+        <div class="qualiopi-tete">
+          <img src="assets/img/logo-qualiopi-processus-certifie-republique-franca-5d0deac5.png" alt="Logo Qualiopi, processus certifié, République française" width="353" height="200">
+          <p>La certification qualité a été délivrée au titre de la ou des catégories d'actions suivantes : <strong>actions de formation</strong> et <strong>bilans de compétences</strong>.</p>
+        </div>
+
+        <h2>Notre certificat</h2>
+        <p>ACC, Andreu Coaching &amp; Conseil, est certifié par CERTIFOPAC, organisme accrédité par le Cofrac sous le numéro 5-0620.</p>
+        <div class="tableau" tabindex="0" role="region" aria-label="Détail du certificat Qualiopi">
+          <table>
+            <tbody>
+              <tr><td>Certificat</td><td>N° 348711-1</td></tr>
+              <tr><td>Organisme certificateur</td><td>CERTIFOPAC, accréditation Cofrac n° 5-0620</td></tr>
+              <tr><td>Catégories d'actions</td><td>L.6313-1, 1° actions de formation ; L.6313-1, 2° centre de bilans de compétences</td></tr>
+              <tr><td>Début de validité</td><td>24 juin 2024</td></tr>
+              <tr><td>Fin de validité</td><td>23 juin 2027, sous réserve de la surveillance prévue dans le cycle de certification</td></tr>
+              <tr><td>Site concerné</td><td>79 rue du Vieux Pont, 92000 Nanterre</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="telechargements">
+          <li><a href="documents/acc-certificat-qualiopi.pdf" target="_blank" rel="noopener">Certificat Qualiopi <span>PDF</span></a></li>
+          <li><a href="documents/acc-reglement-interieur.pdf" target="_blank" rel="noopener">Règlement intérieur <span>PDF</span></a></li>
+          <li><a href="documents/acc-charte-deontologie-formateur.pdf" target="_blank" rel="noopener">Charte de déontologie du formateur <span>PDF</span></a></li>
+          <li><a href="documents/acc-cgv-formations.pdf" target="_blank" rel="noopener">Conditions générales de vente, formations <span>PDF</span></a></li>
+          <li><a href="documents/acc-cgv-bilan-de-competences.pdf" target="_blank" rel="noopener">Conditions générales de vente, bilan de compétences <span>PDF</span></a></li>
+          <li><a href="documents/acc-programme-bilan-de-competences.pdf" target="_blank" rel="noopener">Programme du bilan de compétences <span>PDF</span></a></li>
+          <li><a href="documents/acc-livret-accueil-bilan-de-competences.pdf" target="_blank" rel="noopener">Livret d'accueil du bilan de compétences <span>PDF</span></a></li>
+        </ul>
+
+        <h2>Nos indicateurs</h2>
+        <h3>Bilans de compétences</h3>
+        <div class="indicateurs">
+          <p><b>86 %</b><span>de satisfaction</span></p>
+          <p><b>272</b><span>personnes accompagnées depuis 2020</span></p>
+        </div>
+        <p class="maj">Mis à jour le 13 octobre 2025.</p>
+        <h3>Actions de formation</h3>
+        <div class="indicateurs">
+          <p><b>86 %</b><span>d'atteinte des objectifs</span></p>
+          <p><b>86 %</b><span>de satisfaction</span></p>
+          <p><b>53</b><span>personnes formées depuis 2023</span></p>
+        </div>
+        <p class="maj">Mis à jour le 4 août 2025.</p>
+
+        <h2>Accessibilité et situation de handicap</h2>
+        <p>Chaque accompagnement peut être adapté aux besoins spécifiques des personnes en situation de handicap. Selon le cas, les adaptations portent sur le rythme, le format, présentiel ou distanciel, les supports ou l'accessibilité des lieux, qui doivent respecter les normes applicables aux établissements recevant du public.</p>
+        <p>Le référent handicap est formé à l'accompagnement des personnes en situation de handicap, dans le cadre d'une formation AGEFIPH. Il étudie chaque demande en amont et peut orienter vers les acteurs spécialisés lorsque l'adaptation dépasse nos moyens.</p>
+        <p>Référent handicap : Christophe Andreu, <a href="tel:+33624392527">+33 6 24 39 25 27</a>, <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a>.</p>
+
+        <h2>Réclamations et amélioration continue</h2>
+        <p>Toute réclamation peut être adressée par écrit à <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a>, ou signalée dans le questionnaire de satisfaction. Chaque réclamation fait l'objet d'un accusé de réception, puis est enregistrée dans notre suivi des incidents et réclamations. Les mesures correctives décidées et leur date de mise en application y sont tracées, et vous en êtes informé.</p>
+        <p>Les réclamations, les appréciations des bénéficiaires et les résultats des questionnaires de satisfaction alimentent l'amélioration continue de nos prestations.</p>
+
+        <h2>Financement</h2>
+        <p>Le bilan de compétences est finançable par le compte personnel de formation. Les actions de formation peuvent être prises en charge par votre opérateur de compétences, selon les règles en vigueur.</p>
       </div>
     </div>
-  </section>
-
-  <section class="bloc">
-    <div class="conteneur">
-      <div class="texte">
-        <h2>Le regard de mes clients</h2>
-        <p>Mes clients décrivent mon style comme pragmatique, orienté action et challengeant. Je crée un espace où vous vous sentez écouté et soutenu, tout en étant encouragé à sortir de votre zone de confort. Mon approche est holistique : elle combine des outils d'introspection puissants et des cadres pratiques issus de vingt ans de conseil en stratégie et en transformation. Cette dualité stimule votre énergie du changement et votre réflexion de fond, tout en débouchant sur des solutions concrètes, alignées avec votre environnement et vos aspirations. J'excelle notamment dans l'élaboration de visions stratégiques et systémiques, le renforcement de la présence en leadership et les réflexions professionnelles porteuses de sens.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="conteneur" id="contact" style="padding-top: clamp(48px, 7vw, 88px);">
-    <section class="appel" aria-labelledby="titre-appel">
-      <div>
-        <h2 id="titre-appel">Parlons de votre situation</h2>
-        <p>Un premier échange de 30 minutes, sans engagement, pour comprendre votre besoin et voir si je suis le bon interlocuteur.</p>
-      </div>
-      <div class="appel-actions">
-        <a class="btn btn-clair" href="https://tally.so/r/lbpZMp" target="_blank" rel="noopener">Préciser votre besoin en 3 minutes</a>
-        <a class="btn btn-clair" href="https://calendly.com/christophe-andreu/30min/" target="_blank" rel="noopener">Prendre rendez-vous</a>
-        <a class="btn btn-clair" href="tel:+33624392527">Appeler le +33 6 24 39 25 27</a>
-      </div>
-    </section>
   </div>
 </main>
 

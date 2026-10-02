@@ -2,21 +2,22 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex"><!-- provisoire : à retirer au branchement du domaine -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qualité et certification Qualiopi | ACC</title>
-<link rel="canonical" href="https://www.acc-coaching.fr/qualiopi">
+<title>Coaching exécutif et débrief 360° pour dirigeants | ACC</title>
+<link rel="canonical" href="https://www.acc-coaching.fr/leadership">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="ACC — Andreu Coaching &amp; Conseil">
-<meta property="og:title" content="Qualité et certification Qualiopi | ACC">
-<meta property="og:description" content="Certificat Qualiopi n° 348711-1 délivré par CERTIFOPAC, indicateurs de satisfaction, référent handicap et procédure de réclamation.">
-<meta property="og:url" content="https://www.acc-coaching.fr/qualiopi">
+<meta property="og:title" content="Coaching exécutif et débrief 360° pour dirigeants | ACC">
+<meta property="og:description" content="Coaching exécutif individuel, débriefing 360° et restitution psychométrique (Process Com, DISC &amp; Forces Motrices) pour dirigeants, managers de managers et hauts potentiels.">
+<meta property="og:url" content="https://www.acc-coaching.fr/leadership">
 <meta property="og:image" content="https://www.acc-coaching.fr/assets/img/partage-acc.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="description" content="Certificat Qualiopi n° 348711-1 délivré par CERTIFOPAC, indicateurs de satisfaction, référent handicap et procédure de réclamation.">
+<meta name="description" content="Coaching exécutif individuel, débriefing 360° et restitution psychométrique (Process Com, DISC &amp; Forces Motrices) pour dirigeants, managers de managers et hauts potentiels.">
 <link rel="preload" href="assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/polices.css">
 <style>
@@ -237,6 +238,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .sommaire a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 0; border-top: 1px solid var(--filet-doux); text-decoration: none; color: var(--graphite); font-family: var(--serif); font-size: 22px; }
 .sommaire a span { font-family: var(--sans); font-size: 14px; color: var(--texte-2); white-space: nowrap; }
 .sommaire a:hover { color: var(--accent); }
+.tete-offre.solo .conteneur { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 860px) { .tete-offre .conteneur { grid-template-columns: 1fr; } }
 
 .bloc-offre { border-top: 1px solid var(--filet); padding: clamp(56px, 8vw, 96px) 0; scroll-margin-top: 80px; }
@@ -305,76 +307,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .autres-liste a:hover { color: var(--accent); }
 .autres-liste svg { width: 32px; height: 32px; flex-shrink: 0; }
 @media (max-width: 860px) { .autres-liste { grid-template-columns: 1fr; } }
-
-/* Pages éditoriales */
-.tete-page { padding: clamp(28px, 5vw, 56px) 0 clamp(36px, 5vw, 64px); }
-.tete-page h1 { font-size: clamp(40px, 5.4vw, 72px); line-height: 1.03; max-width: 18ch; }
-.tete-page .chapeau { margin-top: 24px; }
-.texte { max-width: 42em; }
-.texte > * + * { margin-top: 20px; }
-.texte h2 { font-size: clamp(28px, 3vw, 40px); margin-top: 56px !important; }
-.texte h3 { font-size: clamp(22px, 2vw, 27px); margin-top: 40px !important; }
-.bloc { border-top: 1px solid var(--filet); padding: clamp(48px, 7vw, 88px) 0; scroll-margin-top: 80px; }
-
-.bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
-.bio img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 14px; }
-.bio h3 { font-family: var(--sans); font-size: 15px !important; font-weight: 700; color: var(--texte-2); margin: 0 0 10px !important; }
-.bio p { font-size: 17px; line-height: 1.65; }
-@media (max-width: 760px) { .bio { grid-template-columns: 1fr; } .bio img { max-width: 240px; margin: 0 auto; } }
-
-.secteurs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.secteur { background: var(--surface); border-radius: 14px; padding: 24px 26px; }
-.secteur h3 { font-family: var(--sans); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-2); margin-bottom: 10px; }
-.secteur p { font-size: 17px; line-height: 1.65; }
-@media (max-width: 860px) { .secteurs { grid-template-columns: 1fr; } }
-
-.avis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.avis figure { margin: 0; background: var(--surface); border-radius: 16px; padding: clamp(26px, 3vw, 36px); display: flex; flex-direction: column; gap: 20px; }
-.avis blockquote { margin: 0; font-family: var(--serif); font-size: 18px; line-height: 1.55; flex-grow: 1; }
-.avis figcaption { font-size: 15px; color: var(--texte-2); }
-.avis figcaption strong { display: block; color: var(--graphite); }
-.avis .themes { margin-top: 8px; font-size: 14px; color: var(--texte-2); }
-@media (max-width: 960px) { .avis { grid-template-columns: 1fr; } }
-
-.contact-grille { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: clamp(32px, 5vw, 64px); align-items: start; }
-.voie { background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 36px); }
-.voie + .voie { margin-top: 20px; }
-.voie h2 { font-size: clamp(24px, 2.2vw, 30px); margin-bottom: 10px; }
-.voie p { color: var(--texte-2); }
-.voie .btn { margin-top: 20px; }
-.emplacement { margin-top: 20px; border: 1.5px dashed var(--filet); border-radius: 12px; padding: 28px; text-align: center; color: var(--texte-2); font-size: 15px; }
-.coordonnees { background: var(--surface); border-radius: 16px; padding: 28px; position: sticky; top: 100px; }
-.coordonnees h2 { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--texte-2); letter-spacing: 0; margin-bottom: 10px; }
-.coordonnees div { padding: 14px 0; border-top: 1px solid var(--filet-doux); font-size: 17px; line-height: 1.55; }
-.coordonnees .nom { font-family: var(--serif); font-size: 22px; border-top: 0; padding-top: 0; }
-@media (max-width: 960px) { .contact-grille { grid-template-columns: 1fr; } .coordonnees { position: static; } }
-
-
-/* Pages réglementaires */
-.reg { padding-bottom: clamp(56px, 8vw, 96px); }
-.reg-grille { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
-.reg-nav { position: sticky; top: 100px; background: var(--surface); border-radius: 16px; padding: 24px; }
-.reg-nav h2 { font-family: var(--sans); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-2); margin-bottom: 8px; }
-.reg-nav a { display: block; padding: 9px 0; font-size: 16px; color: var(--graphite); text-decoration: none; border-top: 1px solid var(--filet-doux); }
-.reg-nav a:hover { color: var(--accent); }
-.reg-nav a[aria-current="page"] { font-weight: 700; color: var(--accent); }
-@media (max-width: 860px) { .reg-grille { grid-template-columns: 1fr; } .reg-nav { position: static; } }
-
-.reg-corps { max-width: 44em; }
-.reg-corps > * + * { margin-top: 18px; }
-.reg-corps h2 { font-size: clamp(24px, 2.4vw, 32px); margin-top: 48px !important; }
-.reg-corps h2:first-child { margin-top: 0 !important; }
-.reg-corps h3 { font-size: 20px; margin-top: 28px !important; }
-.reg-corps .liste { margin-top: 12px; }
-.maj-page { font-size: 14px; color: var(--texte-2); }
-.a-completer { background: #FFF4D6; color: #4A3A00; border-radius: 4px; padding: 0 6px; }
-
-.qualiopi-tete { display: flex; align-items: center; gap: 28px; background: var(--surface); border-radius: 16px; padding: 24px 28px; flex-wrap: wrap; }
-.qualiopi-tete img { height: 96px; width: auto; background: #FFFFFF; border-radius: 6px; padding: 8px; }
-.qualiopi-tete p { font-size: 16px; line-height: 1.5; min-width: 260px; flex: 1; }
-
-.reg-corps .tableau td { white-space: normal; }
-.reg-corps .tableau td:first-child { white-space: nowrap; width: 200px; }
 .badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .badges img { background: #FFFFFF; border-radius: 8px; padding: 6px; height: 58px; width: auto; display: block; }
 .badges .logo-q { height: 46px; padding: 6px 8px; }
@@ -386,14 +318,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .badges { display: flex; gap: 10px; width: 100%; max-width: 320px; align-items: flex-start; }
 .badges .badge { display: block; box-sizing: border-box; min-width: 0; padding: 6px; background: #FFFFFF; border-radius: 8px; }
 .badges .badge img, .badges .badge img.logo-q { display: block; width: 100% !important; height: auto !important; max-width: none; padding: 0 !important; background: none !important; border-radius: 0 !important; }
-
-/* Tableaux : retour à la ligne plutôt que défilement horizontal */
-@media (min-width: 641px) {
-  .tableau table { min-width: 0; }
-  .tableau td, .tableau th { white-space: normal; }
-  .tableau td:first-child { white-space: normal; min-width: 9em; }
-  .tableau td:last-child { white-space: normal; }
-}
 </style>
 </head>
 <body>
@@ -422,85 +346,136 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 <main id="contenu">
   <div class="conteneur">
     <nav class="fil" aria-label="Fil d'Ariane">
-      <ol><li><a href="/">Accueil</a></li><li aria-current="page">Qualité et certification Qualiopi</li></ol>
+      <ol><li><a href="/">Accueil</a></li><li><a href="/">Offres</a></li><li aria-current="page">Développer son leadership</li></ol>
     </nav>
   </div>
 
-  <section class="tete-page">
+  <section class="tete-offre">
     <div class="conteneur">
-      <h1>Qualité et certification Qualiopi</h1>
-      <p class="maj-page">Dernière mise à jour : septembre 2026.</p>
+      <div>
+        <p class="temps-etiquette">
+          <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FFBF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#FF8000"/></svg>
+          Temps 2 du cycle de vie du dirigeant
+        </p>
+        <h1>Développer son leadership</h1>
+        <p class="chapeau">Au cœur du mandat, les enjeux se déplacent. Il faut passer de l'expertise à la vision, influencer sans autorité hiérarchique, déléguer davantage, tenir la performance dans la durée, ou tirer parti d'un feedback qui dérange. Le coaching exécutif offre un espace pour prendre ce recul et transformer les prises de conscience en changements visibles.</p>
+      </div>
+      <nav class="sommaire" aria-label="Offres de cette page">
+        <h2>Trois accompagnements</h2>
+        <a href="#coaching-executif">Coaching exécutif individuel <span>10 séances</span></a>
+        <a href="#debrief-360">Débriefing 360° <span>séance unique</span></a>
+        <a href="#psychometrie">Débriefing psychométrique <span>séance unique</span></a>
+      </nav>
     </div>
   </section>
 
-  <div class="conteneur reg">
-    <div class="reg-grille">
-      <nav class="reg-nav" aria-label="Pages d'information">
-        <h2>Informations</h2>
-        <a href="/mentions-legales">Mentions légales</a>
-        <a href="/confidentialite">Politique de confidentialité</a>
-        <a href="/qualiopi" aria-current="page">Qualité et certification Qualiopi</a>
-        <a href="/accessibilite">Accessibilité</a>
-      </nav>
+  <section class="bloc-offre" id="coaching-executif" aria-labelledby="t-ce">
+    <div class="conteneur">
+      <h2 id="t-ce">Coaching exécutif individuel</h2>
+      <p class="accroche">Un programme structuré, adapté à votre contexte, qui suit ma méthode en quatre phases : introspection holistique, vision stratégique, dynamique challengée, leadership à impact.</p>
 
-      <div class="reg-corps">
-        <div class="qualiopi-tete">
-          <img src="assets/img/logo-qualiopi-processus-certifie-republique-franca-5d0deac5.png" alt="Logo Qualiopi, processus certifié, République française" width="353" height="200">
-          <p>La certification qualité a été délivrée au titre de la ou des catégories d'actions suivantes : <strong>actions de formation</strong> et <strong>bilans de compétences</strong>.</p>
+      <div class="deux-col">
+        <div class="corps">
+          <h3>Quatre publics</h3>
+          <ol class="phases">
+            <li><div><strong>Les dirigeants et entrepreneurs</strong><p>Nous travaillons leur vision stratégique, leur leadership d'influence, leur modèle opérationnel et la manière de saisir les opportunités de l'IA.</p></div></li>
+            <li><div><strong>Les managers de managers</strong><p>L'accompagnement porte sur la délégation, l'intelligence collective, la régulation des tensions et le leadership situationnel.</p></div></li>
+            <li><div><strong>Les hauts potentiels et experts</strong><p>Il s'agit de passer à une vision systémique, de développer leur influence et leur réseau d'alliés, et d'aligner leurs talents avec leur mission.</p></div></li>
+            <li><div><strong>Les contextes à fort enjeu</strong><p>Il peut s'agir d'une évolution de posture après un 360°, ou d'un retour à la pleine énergie après une période de forte surcharge.</p></div></li>
+          </ol>
+          <p>J'accompagne souvent des dirigeants de la tech (CTO, DSI, CDO) et des dirigeants dont l'entreprise se transforme par le numérique et l'IA.</p>
+
+          <h3>Un cadre exigeant</h3>
+          <p>Mes accompagnements respectent le code de déontologie de l'ICF et font l'objet d'une supervision régulière. Les échanges sont strictement confidentiels. Des réunions tripartites avec le commanditaire fixent les objectifs et en mesurent l'atteinte, sans jamais révéler le contenu des séances.</p>
         </div>
 
-        <h2>Notre certificat</h2>
-        <p>ACC, Andreu Coaching &amp; Conseil, est certifié par CERTIFOPAC, organisme accrédité par le Cofrac sous le numéro 5-0620.</p>
-        <div class="tableau" tabindex="0" role="region" aria-label="Détail du certificat Qualiopi">
-          <table>
-            <tbody>
-              <tr><td>Certificat</td><td>N° 348711-1</td></tr>
-              <tr><td>Organisme certificateur</td><td>CERTIFOPAC, accréditation Cofrac n° 5-0620</td></tr>
-              <tr><td>Catégories d'actions</td><td>L.6313-1, 1° actions de formation ; L.6313-1, 2° centre de bilans de compétences</td></tr>
-              <tr><td>Début de validité</td><td>24 juin 2024</td></tr>
-              <tr><td>Fin de validité</td><td>23 juin 2027, sous réserve de la surveillance prévue dans le cycle de certification</td></tr>
-              <tr><td>Site concerné</td><td>79 rue du Vieux Pont, 92000 Nanterre</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <ul class="telechargements">
-          <li><a href="documents/acc-certificat-qualiopi.pdf" target="_blank" rel="noopener">Certificat Qualiopi <span>PDF</span></a></li>
-          <li><a href="documents/acc-reglement-interieur.pdf" target="_blank" rel="noopener">Règlement intérieur <span>PDF</span></a></li>
-          <li><a href="documents/acc-charte-deontologie-formateur.pdf" target="_blank" rel="noopener">Charte de déontologie du formateur <span>PDF</span></a></li>
-          <li><a href="documents/acc-cgv-formations.pdf" target="_blank" rel="noopener">Conditions générales de vente, formations <span>PDF</span></a></li>
-          <li><a href="documents/acc-cgv-bilan-de-competences.pdf" target="_blank" rel="noopener">Conditions générales de vente, bilan de compétences <span>PDF</span></a></li>
-          <li><a href="documents/acc-programme-bilan-de-competences.pdf" target="_blank" rel="noopener">Programme du bilan de compétences <span>PDF</span></a></li>
-          <li><a href="documents/acc-livret-accueil-bilan-de-competences.pdf" target="_blank" rel="noopener">Livret d'accueil du bilan de compétences <span>PDF</span></a></li>
-        </ul>
-
-        <h2>Nos indicateurs</h2>
-        <h3>Bilans de compétences</h3>
-        <div class="indicateurs">
-          <p><b>86 %</b><span>de satisfaction</span></p>
-          <p><b>272</b><span>personnes accompagnées depuis 2020</span></p>
-        </div>
-        <p class="maj">Mis à jour le 13 octobre 2025.</p>
-        <h3>Actions de formation</h3>
-        <div class="indicateurs">
-          <p><b>86 %</b><span>d'atteinte des objectifs</span></p>
-          <p><b>86 %</b><span>de satisfaction</span></p>
-          <p><b>53</b><span>personnes formées depuis 2023</span></p>
-        </div>
-        <p class="maj">Mis à jour le 4 août 2025.</p>
-
-        <h2>Accessibilité et situation de handicap</h2>
-        <p>Chaque accompagnement peut être adapté aux besoins spécifiques des personnes en situation de handicap. Selon le cas, les adaptations portent sur le rythme, le format, présentiel ou distanciel, les supports ou l'accessibilité des lieux, qui doivent respecter les normes applicables aux établissements recevant du public.</p>
-        <p>Le référent handicap est formé à l'accompagnement des personnes en situation de handicap, dans le cadre d'une formation AGEFIPH. Il étudie chaque demande en amont et peut orienter vers les acteurs spécialisés lorsque l'adaptation dépasse nos moyens.</p>
-        <p>Référent handicap : Christophe Andreu, <a href="tel:+33624392527">+33 6 24 39 25 27</a>, <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a>.</p>
-
-        <h2>Réclamations et amélioration continue</h2>
-        <p>Toute réclamation peut être adressée par écrit à <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a>, ou signalée dans le questionnaire de satisfaction. Chaque réclamation fait l'objet d'un accusé de réception, puis est enregistrée dans notre suivi des incidents et réclamations. Les mesures correctives décidées et leur date de mise en application y sont tracées, et vous en êtes informé.</p>
-        <p>Les réclamations, les appréciations des bénéficiaires et les résultats des questionnaires de satisfaction alimentent l'amélioration continue de nos prestations.</p>
-
-        <h2>Financement</h2>
-        <p>Le bilan de compétences est finançable par le compte personnel de formation. Les actions de formation peuvent être prises en charge par votre opérateur de compétences, selon les règles en vigueur.</p>
+        <aside class="fiche" aria-labelledby="f-ce">
+          <h3 id="f-ce">En bref</h3>
+          <dl>
+            <div><dt>Format</dt><dd>10 séances de 2 heures</dd></div>
+            <div><dt>Inclus</dt><dd>Un test psychométrique, des tripartites en début et en fin de parcours</dd></div>
+            <div><dt>Modalités</dt><dd>Présentiel en Île-de-France ou à distance, en français</dd></div>
+            <div><dt>Tarif</dt><dd class="prix">À partir de 8 000 € HT</dd></div>
+          </dl>
+          <a class="btn btn-principal" href="#contact">Construire votre accompagnement</a>
+        </aside>
       </div>
     </div>
+  </section>
+
+  <section class="bloc-offre" id="debrief-360" aria-labelledby="t-360">
+    <div class="conteneur">
+      <h2 id="t-360">Débriefing 360°</h2>
+      <p class="accroche">Un rapport 360° n'a de valeur que s'il est bien restitué.</p>
+
+      <div class="deux-col">
+        <div class="corps">
+          <p>Je prépare chaque débriefing à partir du rapport, puis je conduis une séance structurée. Elle vise à accueillir les résultats, identifier les écarts significatifs entre perception de soi et perception des autres, et en tirer un plan de développement concret et mesurable.</p>
+          <p>Ce format existe en séance unique ou en ouverture d'un programme de coaching exécutif, lorsque les axes de progrès demandent un travail dans la durée.</p>
+        </div>
+
+        <aside class="fiche" aria-labelledby="f-360">
+          <h3 id="f-360">En bref</h3>
+          <dl>
+            <div><dt>Format</dt><dd>Séance de restitution, seule ou en ouverture d'un programme</dd></div>
+            <div><dt>Prérequis</dt><dd>Un rapport 360° existant, quel que soit l'outil utilisé</dd></div>
+            <div><dt>Ce qui en ressort</dt><dd>Un plan de développement concret et mesurable</dd></div>
+            <div><dt>Tarif</dt><dd class="prix">Sur devis</dd></div>
+          </dl>
+          <a class="btn btn-principal" href="#contact">Organiser une restitution</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc-offre" id="psychometrie" aria-labelledby="t-psy">
+    <div class="conteneur">
+      <h2 id="t-psy">Débriefing psychométrique</h2>
+      <p class="accroche">Process Communication, DISC et Forces Motrices : des outils pour mieux se connaître et mieux décider.</p>
+
+      <div class="deux-col">
+        <div class="corps">
+          <p>Je suis certifié en Process Communication et en DISC &amp; Forces Motrices. Ces outils éclairent vos modes de communication, vos besoins, vos comportements sous pression et ce qui vous motive en profondeur.</p>
+          <p>La restitution fait le lien entre le profil et vos situations réelles de management : les relations difficiles, les moments de tension, les décisions que vous repoussez. C'est ce passage du profil au concret qui produit les changements.</p>
+        </div>
+
+        <aside class="fiche" aria-labelledby="f-psy">
+          <h3 id="f-psy">En bref</h3>
+          <dl>
+            <div><dt>Outils</dt><dd>Process Communication, DISC &amp; Forces Motrices</dd></div>
+            <div><dt>Format</dt><dd>Passation en ligne, puis séance de restitution</dd></div>
+            <div><dt>Public</dt><dd>Dirigeants, managers, membres d'une même équipe</dd></div>
+            <div><dt>Tarif</dt><dd class="prix">Sur devis</dd></div>
+          </dl>
+          <a class="btn btn-principal" href="#contact">Demander un débriefing</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur">
+    <section class="autres" aria-labelledby="t-autres">
+      <h2 id="t-autres">Les autres temps du cycle</h2>
+      <ul class="autres-liste">
+        <li><a href="/prise-de-poste"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FF3300"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#AA0000"/></svg>Réussir sa prise de poste</a></li>
+        <li><a href="/equipe"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#006BFF"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#0038FF"/></svg>Faire grandir l'équipe</a></li>
+        <li><a href="/transition"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#00BF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#008000"/></svg>Réussir sa transition</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="conteneur" id="contact" style="padding-top: clamp(48px, 7vw, 88px);">
+    <section class="appel" aria-labelledby="titre-appel">
+      <div>
+        <h2 id="titre-appel">Parlons de votre situation</h2>
+        <p>Un premier échange de 30 minutes, sans engagement, pour comprendre votre besoin et voir quel format vous convient.</p>
+      </div>
+      <div class="appel-actions">
+        <a class="btn btn-clair" href="https://tally.so/r/lbpZMp" target="_blank" rel="noopener">Préciser votre besoin en 3 minutes</a>
+        <a class="btn btn-clair" href="https://calendly.com/christophe-andreu/30min/" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <a class="btn btn-clair" href="tel:+33624392527">Appeler le +33 6 24 39 25 27</a>
+      </div>
+    </section>
   </div>
 </main>
 

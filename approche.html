@@ -2,21 +2,22 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex"><!-- provisoire : à retirer au branchement du domaine -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coaching d'équipe de direction et formations management | ACC</title>
-<link rel="canonical" href="https://www.acc-coaching.fr/equipe">
+<title>Mon approche du coaching de dirigeants | ACC — Christophe Andreu</title>
+<link rel="canonical" href="https://www.acc-coaching.fr/approche">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="ACC — Andreu Coaching &amp; Conseil">
-<meta property="og:title" content="Coaching d'équipe de direction et formations management | ACC">
-<meta property="og:description" content="Coaching collectif de comités de direction en 3 jours et formations en management, intelligence émotionnelle, techniques du conseil et culture du feedback. Organisme certifié Qualiopi.">
-<meta property="og:url" content="https://www.acc-coaching.fr/equipe">
+<meta property="og:title" content="Mon approche du coaching de dirigeants | ACC — Christophe Andreu">
+<meta property="og:description" content="Une méthode en 4 phases qui allie conseil en stratégie et coaching exécutif. Christophe Andreu, executive coach ICF PCC, ancien directeur de practice chez BearingPoint.">
+<meta property="og:url" content="https://www.acc-coaching.fr/approche">
 <meta property="og:image" content="https://www.acc-coaching.fr/assets/img/partage-acc.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="description" content="Coaching collectif de comités de direction en 3 jours et formations en management, intelligence émotionnelle, techniques du conseil et culture du feedback. Organisme certifié Qualiopi.">
+<meta name="description" content="Une méthode en 4 phases qui allie conseil en stratégie et coaching exécutif. Christophe Andreu, executive coach ICF PCC, ancien directeur de practice chez BearingPoint.">
 <link rel="preload" href="assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/polices.css">
 <style>
@@ -237,7 +238,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .sommaire a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 0; border-top: 1px solid var(--filet-doux); text-decoration: none; color: var(--graphite); font-family: var(--serif); font-size: 22px; }
 .sommaire a span { font-family: var(--sans); font-size: 14px; color: var(--texte-2); white-space: nowrap; }
 .sommaire a:hover { color: var(--accent); }
-.tete-offre.solo .conteneur { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 860px) { .tete-offre .conteneur { grid-template-columns: 1fr; } }
 
 .bloc-offre { border-top: 1px solid var(--filet); padding: clamp(56px, 8vw, 96px) 0; scroll-margin-top: 80px; }
@@ -306,9 +306,61 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .autres-liste a:hover { color: var(--accent); }
 .autres-liste svg { width: 32px; height: 32px; flex-shrink: 0; }
 @media (max-width: 860px) { .autres-liste { grid-template-columns: 1fr; } }
+
+/* Pages éditoriales */
+.tete-page { padding: clamp(28px, 5vw, 56px) 0 clamp(36px, 5vw, 64px); }
+.tete-page h1 { font-size: clamp(40px, 5.4vw, 72px); line-height: 1.03; max-width: 18ch; }
+.tete-page .chapeau { margin-top: 24px; }
+.texte { max-width: 42em; }
+.texte > * + * { margin-top: 20px; }
+.texte h2 { font-size: clamp(28px, 3vw, 40px); margin-top: 56px !important; }
+.texte h3 { font-size: clamp(22px, 2vw, 27px); margin-top: 40px !important; }
+.bloc { border-top: 1px solid var(--filet); padding: clamp(48px, 7vw, 88px) 0; scroll-margin-top: 80px; }
+
+.bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
+.bio img { width: 240px; height: 300px; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 14px; align-self: start; }
+.bio h3 { font-family: var(--sans); font-size: 15px !important; font-weight: 700; color: var(--texte-2); margin: 0 0 10px !important; }
+.bio p { font-size: 17px; line-height: 1.65; }
+@media (max-width: 760px) { .bio { grid-template-columns: 1fr; } .bio img { width: 220px; height: 275px; margin: 0 auto; } }
+
+.secteurs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.secteur { background: var(--surface); border-radius: 14px; padding: 24px 26px; }
+.secteur h3 { font-family: var(--sans); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-2); margin-bottom: 10px; }
+.secteur p { font-size: 17px; line-height: 1.65; }
+@media (max-width: 860px) { .secteurs { grid-template-columns: 1fr; } }
+
+.avis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.avis figure { margin: 0; background: var(--surface); border-radius: 16px; padding: clamp(26px, 3vw, 36px); display: flex; flex-direction: column; gap: 20px; }
+.avis blockquote { margin: 0; font-family: var(--serif); font-size: 18px; line-height: 1.55; flex-grow: 1; }
+.avis figcaption { font-size: 15px; color: var(--texte-2); }
+.avis figcaption strong { display: block; color: var(--graphite); }
+.avis .themes { margin-top: 8px; font-size: 14px; color: var(--texte-2); }
+@media (max-width: 960px) { .avis { grid-template-columns: 1fr; } }
+
+.contact-grille { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: clamp(32px, 5vw, 64px); align-items: start; }
+.voie { background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 36px); }
+.voie + .voie { margin-top: 20px; }
+.voie h2 { font-size: clamp(24px, 2.2vw, 30px); margin-bottom: 10px; }
+.voie p { color: var(--texte-2); }
+.voie .btn { margin-top: 20px; }
+.emplacement { margin-top: 20px; border: 1.5px dashed var(--filet); border-radius: 12px; padding: 28px; text-align: center; color: var(--texte-2); font-size: 15px; }
+.coordonnees { background: var(--surface); border-radius: 16px; padding: 28px; position: sticky; top: 100px; }
+.coordonnees h2 { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--texte-2); letter-spacing: 0; margin-bottom: 10px; }
+.coordonnees div { padding: 14px 0; border-top: 1px solid var(--filet-doux); font-size: 17px; line-height: 1.55; }
+.coordonnees .nom { font-family: var(--serif); font-size: 22px; border-top: 0; padding-top: 0; }
+@media (max-width: 960px) { .contact-grille { grid-template-columns: 1fr; } .coordonnees { position: static; } }
+
 .badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .badges img { background: #FFFFFF; border-radius: 8px; padding: 6px; height: 58px; width: auto; display: block; }
 .badges .logo-q { height: 46px; padding: 6px 8px; }
+.certifs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.certif { background: var(--surface); border-radius: 16px; padding: 24px 26px; display: flex; gap: 20px; align-items: flex-start; }
+.certif img { height: 84px; width: 82px; object-fit: contain; flex-shrink: 0; background: #FFFFFF; border-radius: 10px; padding: 6px; align-self: start; }
+.certif h3 { font-size: 19px !important; margin: 0 0 6px !important; }
+.certif p { font-size: 16px; color: var(--texte-2); margin: 0; }
+.certif .detail { display: block; margin-top: 8px; font-size: 14px; }
+@media (max-width: 860px) { .certifs { grid-template-columns: 1fr; } }
+@media (min-width: 861px) { .autres-liste.quatre { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .appel-actions { min-width: 300px; }
 .appel-actions .btn { width: 100%; font-size: 17px; padding: 15px 22px; }
 @media (max-width: 860px) { .appel-actions { min-width: 0; width: 100%; } }
@@ -327,7 +379,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   <div class="conteneur">
     <a class="logo" href="/" aria-label="ACC, accueil"><img src="assets/img/acc-andreu-coaching-amp-conseil-6dc7da43.png" alt="ACC — Andreu Coaching &amp; Conseil" width="318" height="88"></a>
     <nav class="nav" id="menu" aria-label="Navigation principale">
-      <a href="/approche">L'approche</a>
+      <a href="/approche" aria-current="page">L'approche</a>
       <a href="/offres">Offres</a>
       <a href="/references">Références</a>
       <a href="/contact">Contact</a>
@@ -345,131 +397,112 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 <main id="contenu">
   <div class="conteneur">
     <nav class="fil" aria-label="Fil d'Ariane">
-      <ol><li><a href="/">Accueil</a></li><li><a href="/">Offres</a></li><li aria-current="page">Faire grandir l'équipe</li></ol>
+      <ol><li><a href="/">Accueil</a></li><li aria-current="page">L'approche</li></ol>
     </nav>
   </div>
 
-  <section class="tete-offre">
+  <section class="tete-page">
     <div class="conteneur">
-      <div>
-        <p class="temps-etiquette">
-          <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#006BFF"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#0038FF"/></svg>
-          Temps 3 du cycle de vie du dirigeant
-        </p>
-        <h1>Faire grandir l'équipe</h1>
-        <p class="chapeau">Réunir des talents ne suffit pas à faire un collectif. Les styles se heurtent, les priorités divergent, les rituels s'usent. Le coaching collectif et la formation permettent de construire ce qui fait la force d'une équipe dirigeante : une compréhension mutuelle, une ambition commune et un fonctionnement qui tient sous la pression.</p>
-      </div>
-      <nav class="sommaire" aria-label="Offres de cette page">
-        <h2>Deux accompagnements</h2>
-        <a href="#coaching-equipe">Coaching d'équipe de direction <span>3 jours</span></a>
-        <a href="#formations">Formations <span>1 à 3 jours</span></a>
-      </nav>
+      <h1>Prendre du recul, décider en conscience, agir avec impact</h1>
+      <p class="chapeau">Mon métier consiste à faire circuler les énergies du changement. J'aide mes clients à faire des choix en conscience de qui ils sont, de leurs enjeux systémiques et d'élaborer une stratégie impactante et durable.</p>
     </div>
   </section>
 
-  <section class="bloc-offre" id="coaching-equipe" aria-labelledby="t-ce">
+  <section class="bloc">
     <div class="conteneur">
-      <h2 id="t-ce">Coaching d'équipe de direction</h2>
-      <p class="accroche">Un parcours en trois journées, précédé d'un diagnostic et suivi d'une régulation, pour des comités de direction et des équipes dirigeantes.</p>
+      <div class="texte">
+        <h2>L'alliance du conseil, du coaching et de la formation</h2>
+        <p>Pendant vingt ans, j'ai conduit des programmes de transformation business, SI et RH pour de grands groupes. Depuis, j'accompagne des dirigeants en coaching. Mes clients décrivent mon style comme pragmatique, challengeant et bienveillant.</p>
+        <p>Cette double expérience change la nature de l'accompagnement. Je comprends les enjeux de votre organisation sans avoir besoin qu'on me les traduise. Je peux aussi apporter, quand c'est utile, un cadre de réflexion éprouvé. La formation complète ce dispositif lorsqu'une équipe a besoin de développer des compétences partagées.</p>
+      </div>
+    </div>
+  </section>
 
+  <section class="bloc" id="methode" aria-labelledby="t-methode">
+    <div class="conteneur">
+      <h2 id="t-methode" class="titre-section">Une méthode en quatre phases</h2>
       <div class="deux-col">
         <div class="corps">
-          <h3>Le déroulé du parcours</h3>
           <ol class="phases">
-            <li><div><strong>En amont : le cadrage</strong><p>Un échange avec le dirigeant, puis des entretiens individuels avec les membres de l'équipe, permettent de comprendre les enjeux, les attentes et les points de friction. Ce diagnostic sert à ajuster le contenu des trois journées.</p></div></li>
-            <li><div><strong>Jour 1 : se connaître pour mieux coopérer</strong><p>Chacun découvre son profil (DISC ou Process Communication) et la cartographie des styles de l'équipe. Le groupe apprend à décoder ses modes de communication et ses réactions sous tension, puis identifie ce que ses différences apportent au collectif.</p></div></li>
-            <li><div><strong>Jour 2 : construire une vision partagée</strong><p>L'équipe clarifie son ambition, ses priorités stratégiques et les valeurs qui la guident. Elle cartographie ses parties prenantes et traduit la vision en objectifs collectifs. C'est le socle de l'alliance.</p></div></li>
-            <li><div><strong>Jour 3 : réinventer notre fonctionnement</strong><p>L'équipe revoit ses modes de décision, sa gouvernance et ses rituels. Elle installe une culture du feedback et formalise une charte d'équipe ainsi qu'un plan d'action daté et assigné.</p></div></li>
-            <li><div><strong>Trois mois après : la régulation</strong><p>Une demi-journée permet de mesurer les progrès, d'ajuster la charte et de relancer la dynamique.</p></div></li>
+            <li><div><strong>Introspection holistique</strong><p>Faire le point sur vos ressources, vos modes de fonctionnement et ce qui vous anime, par une approche qui mobilise la tête, le cœur et le corps.</p></div></li>
+            <li><div><strong>Vision stratégique</strong><p>Clarifier où vous voulez aller et traduire cette ambition en objectifs ancrés sur vos valeurs.</p></div></li>
+            <li><div><strong>Dynamique challengée</strong><p>Tester vos options, lever les freins et expérimenter de nouvelles postures en situation réelle.</p></div></li>
+            <li><div><strong>Leadership à impact</strong><p>Ancrer durablement les changements et mesurer leurs effets sur vous, votre équipe et votre organisation.</p></div></li>
           </ol>
-
-          <h3>Le rythme</h3>
-          <p>Les trois journées peuvent être espacées de quelques semaines pour laisser le temps de l'expérimentation entre chaque étape. Ce rythme donne de meilleurs résultats qu'un séminaire de trois jours consécutifs, mais il demande une discipline d'agenda au sein du comité.</p>
         </div>
-
-        <aside class="fiche" aria-labelledby="f-ce">
-          <h3 id="f-ce">En bref</h3>
+        <aside class="fiche" aria-labelledby="f-outils">
+          <h3 id="f-outils">Des outils éprouvés</h3>
           <dl>
-            <div><dt>Format</dt><dd>3 journées, plus une demi-journée de régulation</dd></div>
-            <div><dt>En amont</dt><dd>Entretiens individuels de cadrage avec chaque membre</dd></div>
-            <div><dt>Public</dt><dd>Comités de direction et équipes dirigeantes</dd></div>
-            <div><dt>Ce qui en ressort</dt><dd>Charte d'équipe et plan d'action daté</dd></div>
-            <div><dt>Tarif</dt><dd class="prix">Sur devis</dd></div>
+            <div><dt>Psychométrie</dt><dd>Process Communication, DISC &amp; Forces Motrices</dd></div>
+            <div><dt>Management &amp; leadership</dt><dd>Management situationnel d'Hersey &amp; Blanchard, styles de leadership de Goleman</dd></div>
+            <div><dt>Ancrage</dt><dd>Approche tête-cœur-corps, apports des neurosciences</dd></div>
+            <div><dt>Stratégie</dt><dd>Vision et objectifs ancrés sur les valeurs, dessin systémique, cartographie des alliés</dd></div>
           </dl>
-          <a class="btn btn-principal" href="#contact">Parler de votre équipe</a>
+          <p class="maj">Un test psychométrique est inclus dans chaque programme de coaching exécutif.</p>
         </aside>
       </div>
     </div>
   </section>
 
-  <section class="bloc-offre" id="formations" aria-labelledby="t-form">
+  <section class="bloc">
     <div class="conteneur">
-      <h2 id="t-form">Formations</h2>
-      <p class="accroche">Mon cabinet est certifié Qualiopi pour les actions de formation. Les programmes sont conçus pour des cadres dirigeants, des managers et des consultants. Ils sont adaptés à chaque client et animés en intra-entreprise.</p>
+      <div class="texte">
+        <h2>Un cadre exigeant</h2>
+        <p>Mes accompagnements respectent le code de déontologie de l'ICF et font l'objet d'une supervision régulière. Les échanges sont strictement confidentiels. Des réunions tripartites avec le commanditaire fixent les objectifs et en mesurent l'atteinte, sans jamais révéler le contenu des séances. Les séances ont lieu en français, en présentiel en Île-de-France ou à distance.</p>
 
-      <div class="deux-col">
-        <div class="corps">
-          <h3>Management et leadership, niveaux 1 et 2</h3>
-          <p>Le fil rouge est le voyage du manager, en six étapes réparties sur trois temps.</p>
-          <p><strong>Être manager</strong> : poser le cadre des valeurs, donner la vision stratégique et le sens de l'action, puis développer une meilleure connaissance de soi et de son équipe pour manager en « conscience élargie ».</p>
-          <p><strong>Manager mon collaborateur</strong> : intégrer, fixer des objectifs alignés, cadrer et aider à prioriser, assurer le suivi, donner des feedbacks positifs, de progrès et correctifs, évaluer avec justesse et courage managérial, puis accompagner chacun vers l'excellence et l'autonomie en adaptant son style à la situation.</p>
-          <p><strong>Manager mon équipe</strong> : installer des rituels et animer des réunions au service de l'intelligence collective, cultiver l'amélioration continue et la posture basse du manager coach, et célébrer les réussites.</p>
-          <p>Durée : 3 journées (21 heures) pour le niveau 1, en intra-entreprise. Un niveau 2 approfondit les situations managériales difficiles, le management de managers et la délégation, les styles de leadership de Goleman, la conception de réflexion stratégique, les jeux d'influence et le pilotage d'une performance durable.</p>
+        <h2>Mon parcours</h2>
+        <p>J'ai commencé ma carrière dans le conseil en stratégie, jusqu'à diriger une practice chez BearingPoint. J'y ai piloté des programmes de transformation business, digitale, agile et RH pour des acteurs comme Allianz, TotalEnergies, le Ministère de la Défense et EDF. J'ai ensuite choisi de me consacrer à l'accompagnement des dirigeants, en gardant ce qui fait la force du conseil : comprendre vite, structurer, viser le concret.</p>
+      </div>
+    </div>
+  </section>
 
-          <h3>Intelligence émotionnelle, « de l'énergie à l'impact »</h3>
-          <p>Cinq mouvements qui s'enchaînent : réguler son énergie, se connaître sous pression, lire l'autre, transformer la relation et tenir sa posture. Chaque séquence associe un apport court appuyé sur les neurosciences, une expérimentation et un protocole reproductible : régulation physiologique, grille situation-pensée-émotion-comportement, profil de personnalité et degrés de stress, niveaux d'écoute, feedback et demande assertive, posture de leader coach.</p>
-          <p>Durée : 2 journées consécutives (14 heures), en présentiel dans vos locaux, pour un groupe de 8 à 12 managers ou cadres dirigeants. Chaque participant bénéficie en amont d'un entretien individuel préparatoire de 30 minutes, qui sert à recueillir les situations réelles travaillées pendant la formation. Les séquences expérientielles ne sont pas transposables à distance.</p>
-          <p>Deux options prolongent le parcours : une restitution individuelle du profil de personnalité (45 minutes par participant), et deux ateliers de codéveloppement à six semaines et trois mois.</p>
-
-          <h3>Techniques du conseil, niveaux 1 et 2</h3>
-          <p>Vos équipes interviennent chez vos clients ou auprès de vos directions métiers, et leur crédibilité se joue dans les gestes de base : écouter et restituer, structurer un problème, animer une réunion, formaliser une recommandation, cadrer une demande, démontrer leur valeur ajoutée.</p>
-          <p>Je transmets ce que vingt ans de conseil en stratégie m'ont appris, dans un format intensif et très pratique : chaque technique est travaillée sur vos propres situations, puis rejouée jusqu'à devenir un réflexe.</p>
-          <p>Durée : 3 journées (21 heures) pour le niveau 1, en intra-entreprise. Un niveau 2 approfondit le cadrage de mission et la relation client.</p>
-
-          <h3>Culture du feedback</h3>
-          <p>Une équipe ne se dit pas les choses par manque de méthode plus que par manque de volonté. L'atelier part de la connaissance de soi et des préférences de chacun, pour décoder les réactions et les besoins, puis installe la reconnaissance positive avant d'aborder le feedback de progrès.</p>
-          <p>La seconde partie outille le feedback correctif : assertivité, communication non violente et méthode DESC, travaillés sur des situations réelles apportées par les participants, avec une séquence tête-cœur-corps pour ancrer la pratique. Chacun repart avec des formulations testées et un engagement concret.</p>
-          <p>Durée : 1 journée (7 heures) ou 2 demi-journées, en intra-entreprise. Ce format convient aussi bien à une équipe constituée qu'à un collectif de managers.</p>
-
-          <h3>Indicateurs qualité</h3>
-          <div class="indicateurs">
-            <p><b>86 %</b><span>d'atteinte des objectifs</span></p>
-            <p><b>86 %</b><span>de satisfaction</span></p>
-            <p><b>53</b><span>personnes formées depuis 2023</span></p>
+  <section class="bloc" id="certifications" aria-labelledby="t-certifs">
+    <div class="conteneur">
+      <h2 id="t-certifs" class="titre-section">Certifications et affiliations</h2>
+      <div class="certifs">
+        <div class="certif">
+          <img src="assets/img/badge-icf-professional-certified-coach-4062b054.png" alt="Badge ICF Professional Certified Coach" width="156" height="160">
+          <div>
+            <h3>Professional Certified Coach (PCC)</h3>
+            <p>Certification de l'International Coaching Federation, attribuée après démonstration de la maîtrise des compétences clés du coaching et un volume d'heures de pratique vérifié.<span class="detail">Obtenue en septembre 2021, valable jusqu'au 30 septembre 2027.</span></p>
           </div>
-          <p class="maj">Mis à jour le 4 août 2025.</p>
-
-          <div class="encadre">
-            <h4>Accessibilité</h4>
-            <p>Chaque formation peut être adaptée aux besoins des personnes en situation de handicap. Contactez le référent handicap en amont : Christophe Andreu, <a href="tel:+33624392527">+33 6 24 39 25 27</a>, <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a>.</p>
-          </div>
-
-          <h3>Programmes détaillés</h3>
-          <p>Chaque formation fait l'objet d'un programme détaillé, remis sur demande. Il précise les objectifs, les prérequis, les modalités, les délais d'accès et l'accessibilité. Comptez au minimum un mois entre la signature de la convention et le démarrage.</p>
         </div>
-
-        <aside class="fiche" aria-labelledby="f-form">
-          <h3 id="f-form">En bref</h3>
-          <dl>
-            <div><dt>Durée</dt><dd>1 à 3 journées selon le programme</dd></div>
-            <div><dt>Modalités</dt><dd>Intra-entreprise, en français ; présentiel exigé pour l'intelligence émotionnelle</dd></div>
-            <div><dt>Effectif</dt><dd>8 à 12 participants</dd></div>
-            <div><dt>Public</dt><dd>Cadres dirigeants, managers, consultants, collaborateurs</dd></div>
-            <div><dt>Certification</dt><dd>Organisme certifié Qualiopi</dd></div>
-            <div><dt>Tarif</dt><dd class="prix">Sur devis</dd></div>
-          </dl>
-          <a class="btn btn-principal" href="#contact">Demander un programme</a>
-        </aside>
+        <div class="certif">
+          <img src="assets/img/badge-membre-de-l-international-coaching-federatio-372ed3ec.png" alt="Badge membre de l'International Coaching Federation" width="164" height="160">
+          <div>
+            <h3>Membre de l'International Coaching Federation</h3>
+            <p>L'adhésion engage au respect du code de déontologie de l'ICF et à une formation continue régulière. Ma pratique fait par ailleurs l'objet d'une supervision.</p>
+          </div>
+        </div>
+      </div>
+      <div class="certifs" style="grid-template-columns: minmax(0, 1fr);">
+        <div class="certif">
+          <div>
+            <h3>Autres formations et certifications</h3>
+            <p>Formation au coaching par International Mozaik. Certifications en Process Communication (Kahler Communications), en DISC et Forces Motrices (Assessments 24x7), et en neurosciences (OpenMind). Formation à l'accompagnement des personnes en situation de handicap (AGEFIPH). Cabinet certifié Qualiopi pour les actions de formation et les bilans de compétences.<span class="detail"><a href="/qualiopi">Voir la page Qualité et certification Qualiopi</a></span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <div class="conteneur">
+    <div class="bio">
+      <img src="assets/img/portrait-de-christophe-andreu-cc6f0a04.jpg" alt="Portrait de Christophe Andreu" width="560" height="700">
+      <div>
+        <h3>Repères</h3>
+        <p>Christophe Andreu est executive coach certifié ICF PCC et fondateur d'ACC, Andreu Coaching &amp; Conseil. Ingénieur de formation (EPITA) et ancien directeur de practice chez BearingPoint, il cumule vingt ans de conseil en stratégie digitale et IT et plus de 7 000 heures de coaching exécutif et de formation auprès de dirigeants de grands groupes, notamment dans la banque-assurance, le luxe, l'énergie, la tech et les services professionnels. Formé au coaching par International Mozaik, il est certifié en Process Communication, en DISC et Forces Motrices, et en neurosciences. Il est également diplômé de l'ISC Paris et a suivi deux programmes de leadership à Yale. Son cabinet est certifié Qualiopi depuis 2024.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conteneur">
     <section class="autres" aria-labelledby="t-autres">
-      <h2 id="t-autres">Les autres temps du cycle</h2>
-      <ul class="autres-liste">
+      <h2 id="t-autres">Les quatre temps du cycle</h2>
+      <ul class="autres-liste quatre">
         <li><a href="/prise-de-poste"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FF3300"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#AA0000"/></svg>Réussir sa prise de poste</a></li>
         <li><a href="/leadership"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FFBF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#FF8000"/></svg>Développer son leadership</a></li>
+        <li><a href="/equipe"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#006BFF"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#0038FF"/></svg>Faire grandir l'équipe</a></li>
         <li><a href="/transition"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#00BF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#008000"/></svg>Réussir sa transition</a></li>
       </ul>
     </section>
@@ -478,8 +511,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   <div class="conteneur" id="contact" style="padding-top: clamp(48px, 7vw, 88px);">
     <section class="appel" aria-labelledby="titre-appel">
       <div>
-        <h2 id="titre-appel">Parlons de votre collectif</h2>
-        <p>Un premier échange de 30 minutes, sans engagement, pour comprendre la situation de votre équipe et le résultat attendu.</p>
+        <h2 id="titre-appel">Parlons de votre situation</h2>
+        <p>Un premier échange de 30 minutes, sans engagement, pour comprendre votre besoin et voir si je suis le bon interlocuteur.</p>
       </div>
       <div class="appel-actions">
         <a class="btn btn-clair" href="https://tally.so/r/lbpZMp" target="_blank" rel="noopener">Préciser votre besoin en 3 minutes</a>

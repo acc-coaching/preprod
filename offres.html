@@ -2,21 +2,22 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex"><!-- provisoire : à retirer au branchement du domaine -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mentions légales | ACC</title>
-<link rel="canonical" href="https://www.acc-coaching.fr/mentions-legales">
+<title>Offres et catalogue — coaching et formation de dirigeants | ACC</title>
+<link rel="canonical" href="https://www.acc-coaching.fr/offres">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="ACC — Andreu Coaching &amp; Conseil">
-<meta property="og:title" content="Mentions légales | ACC">
-<meta property="og:description" content="Mentions légales du site acc-coaching.fr : éditeur, organisme de formation, hébergement, propriété intellectuelle.">
-<meta property="og:url" content="https://www.acc-coaching.fr/mentions-legales">
+<meta property="og:title" content="Offres et catalogue — coaching et formation de dirigeants | ACC">
+<meta property="og:description" content="Coaching de prise de poste, coaching exécutif, 360°, coaching d'équipe, formations, outplacement et bilan de compétences : le catalogue ACC, rangé selon le cycle de vie du dirigeant.">
+<meta property="og:url" content="https://www.acc-coaching.fr/offres">
 <meta property="og:image" content="https://www.acc-coaching.fr/assets/img/partage-acc.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="description" content="Mentions légales du site acc-coaching.fr : éditeur, organisme de formation, hébergement, propriété intellectuelle.">
+<meta name="description" content="Coaching de prise de poste, coaching exécutif, 360°, coaching d'équipe, formations, outplacement et bilan de compétences : le catalogue ACC, rangé selon le cycle de vie du dirigeant.">
 <link rel="preload" href="assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/polices.css">
 <style>
@@ -317,10 +318,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .bloc { border-top: 1px solid var(--filet); padding: clamp(48px, 7vw, 88px) 0; scroll-margin-top: 80px; }
 
 .bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; background: var(--surface); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
-.bio img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 14px; }
+.bio img { width: 240px; height: 300px; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 14px; align-self: start; }
 .bio h3 { font-family: var(--sans); font-size: 15px !important; font-weight: 700; color: var(--texte-2); margin: 0 0 10px !important; }
 .bio p { font-size: 17px; line-height: 1.65; }
-@media (max-width: 760px) { .bio { grid-template-columns: 1fr; } .bio img { max-width: 240px; margin: 0 auto; } }
+@media (max-width: 760px) { .bio { grid-template-columns: 1fr; } .bio img { width: 220px; height: 275px; margin: 0 auto; } }
 
 .secteurs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .secteur { background: var(--surface); border-radius: 14px; padding: 24px 26px; }
@@ -349,38 +350,68 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .coordonnees .nom { font-family: var(--serif); font-size: 22px; border-top: 0; padding-top: 0; }
 @media (max-width: 960px) { .contact-grille { grid-template-columns: 1fr; } .coordonnees { position: static; } }
 
-
-/* Pages réglementaires */
-.reg { padding-bottom: clamp(56px, 8vw, 96px); }
-.reg-grille { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
-.reg-nav { position: sticky; top: 100px; background: var(--surface); border-radius: 16px; padding: 24px; }
-.reg-nav h2 { font-family: var(--sans); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-2); margin-bottom: 8px; }
-.reg-nav a { display: block; padding: 9px 0; font-size: 16px; color: var(--graphite); text-decoration: none; border-top: 1px solid var(--filet-doux); }
-.reg-nav a:hover { color: var(--accent); }
-.reg-nav a[aria-current="page"] { font-weight: 700; color: var(--accent); }
-@media (max-width: 860px) { .reg-grille { grid-template-columns: 1fr; } .reg-nav { position: static; } }
-
-.reg-corps { max-width: 44em; }
-.reg-corps > * + * { margin-top: 18px; }
-.reg-corps h2 { font-size: clamp(24px, 2.4vw, 32px); margin-top: 48px !important; }
-.reg-corps h2:first-child { margin-top: 0 !important; }
-.reg-corps h3 { font-size: 20px; margin-top: 28px !important; }
-.reg-corps .liste { margin-top: 12px; }
-.maj-page { font-size: 14px; color: var(--texte-2); }
-.a-completer { background: #FFF4D6; color: #4A3A00; border-radius: 4px; padding: 0 6px; }
-
-.qualiopi-tete { display: flex; align-items: center; gap: 28px; background: var(--surface); border-radius: 16px; padding: 24px 28px; flex-wrap: wrap; }
-.qualiopi-tete img { height: 96px; width: auto; background: #FFFFFF; border-radius: 6px; padding: 8px; }
-.qualiopi-tete p { font-size: 16px; line-height: 1.5; min-width: 260px; flex: 1; }
-
-.reg-corps .tableau td { white-space: normal; }
-.reg-corps .tableau td:first-child { white-space: nowrap; width: 200px; }
 .badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .badges img { background: #FFFFFF; border-radius: 8px; padding: 6px; height: 58px; width: auto; display: block; }
 .badges .logo-q { height: 46px; padding: 6px 8px; }
+.certifs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.certif { background: var(--surface); border-radius: 16px; padding: 24px 26px; display: flex; gap: 20px; align-items: flex-start; }
+.certif img { height: 84px; width: 82px; object-fit: contain; flex-shrink: 0; background: #FFFFFF; border-radius: 10px; padding: 6px; align-self: start; }
+.certif h3 { font-size: 19px !important; margin: 0 0 6px !important; }
+.certif p { font-size: 16px; color: var(--texte-2); margin: 0; }
+.certif .detail { display: block; margin-top: 8px; font-size: 14px; }
+@media (max-width: 860px) { .certifs { grid-template-columns: 1fr; } }
+@media (min-width: 861px) { .autres-liste.quatre { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .appel-actions { min-width: 300px; }
 .appel-actions .btn { width: 100%; font-size: 17px; padding: 15px 22px; }
 @media (max-width: 860px) { .appel-actions { min-width: 0; width: 100%; } }
+
+/* Catalogue coloré */
+.catalogue { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: clamp(32px, 4vw, 48px); align-items: stretch; }
+.cat-col { background: var(--surface); border-radius: 16px; overflow: hidden; }
+.cat-col::before { content: ""; display: block; height: 6px; }
+.t1::before { background: linear-gradient(135deg, #FF3300 50%, #AA0000 50%); }
+.t2::before { background: linear-gradient(135deg, #FFBF00 50%, #FF8000 50%); }
+.t3::before { background: linear-gradient(135deg, #006BFF 50%, #0038FF 50%); }
+.t4::before { background: linear-gradient(135deg, #00BF00 50%, #008000 50%); }
+.cat-tete { display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; border-bottom: 1px solid var(--filet-doux); }
+.cat-tete svg { flex-shrink: 0; }
+.cat-rang { display: block; font-size: 13px; font-weight: 700; color: var(--texte-2); }
+.cat-tete h3 { font-size: 20px; line-height: 1.15; }
+.cat-liste { list-style: none; margin: 0; padding: 6px 0; }
+.cat-liste li + li { border-top: 1px solid var(--filet-doux); }
+.cat-liste a { display: block; padding: 14px 20px 14px 32px; text-decoration: none; color: var(--graphite); position: relative; }
+.cat-liste a::before { content: ""; position: absolute; left: 18px; top: 22px; width: 7px; height: 7px; border-radius: 50%; }
+.t1 .cat-liste a::before { background: #FF3300; }
+.t2 .cat-liste a::before { background: #FF8000; }
+.t3 .cat-liste a::before { background: #0038FF; }
+.t4 .cat-liste a::before { background: #008000; }
+.cat-liste a:hover .cat-nom { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.cat-nom { display: block; font-family: var(--serif); font-weight: 600; font-size: 17px; line-height: 1.25; }
+.cat-fmt { display: block; font-size: 14px; color: var(--texte-2); margin-top: 4px; line-height: 1.45; }
+.cat-prix { display: block; font-size: 14px; font-weight: 700; margin-top: 6px; }
+.cat-note { margin-top: 28px; color: var(--texte-2); font-size: 16px; max-width: 52em; }
+@media (max-width: 1100px) { .catalogue { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .catalogue { grid-template-columns: 1fr; } }
+
+/* Bandeau Formations, transverse */
+.cat-form { background: var(--surface); border-radius: 16px; overflow: hidden; margin-top: 18px; }
+.cat-form::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, #FF3300 0 25%, #FFBF00 25% 50%, #006BFF 50% 75%, #00BF00 75% 100%); }
+.cat-form-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cat-form-liste li + li { border-left: 1px solid var(--filet-doux); }
+.cat-form-liste a { display: block; height: 100%; padding: 18px 20px 20px 32px; text-decoration: none; color: var(--graphite); position: relative; }
+.cat-form-liste a::before { content: ""; position: absolute; left: 18px; top: 26px; width: 7px; height: 7px; border-radius: 50%; background: var(--graphite); }
+.cat-form-liste a:hover .cat-nom { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1100px) {
+  .cat-form-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cat-form-liste li:nth-child(3) { border-left: 0; }
+  .cat-form-liste li:nth-child(n+3) { border-top: 1px solid var(--filet-doux); }
+}
+@media (max-width: 640px) {
+  .cat-form-liste { grid-template-columns: 1fr; }
+  .cat-form-liste li + li { border-left: 0; border-top: 1px solid var(--filet-doux); }
+}
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 860px) { .temps h3 { padding-top: 6px; } }
 
 /* Badges du pied de page : même hauteur, largeur totale limitée à la colonne */
 .badges { display: flex; gap: 10px; width: 100%; max-width: 320px; align-items: flex-start; }
@@ -396,8 +427,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   <div class="conteneur">
     <a class="logo" href="/" aria-label="ACC, accueil"><img src="assets/img/acc-andreu-coaching-amp-conseil-6dc7da43.png" alt="ACC — Andreu Coaching &amp; Conseil" width="318" height="88"></a>
     <nav class="nav" id="menu" aria-label="Navigation principale">
-      <a href="/approche">L'approche</a>
-      <a href="/offres">Offres</a>
+      <a href="/approche" aria-current="page">L'approche</a>
+      <a href="/offres" aria-current="page">Offres</a>
       <a href="/references">Références</a>
       <a href="/contact">Contact</a>
       <a class="btn" href="https://calendly.com/christophe-andreu/30min/" target="_blank" rel="noopener">Prendre rendez-vous</a>
@@ -414,55 +445,123 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 <main id="contenu">
   <div class="conteneur">
     <nav class="fil" aria-label="Fil d'Ariane">
-      <ol><li><a href="/">Accueil</a></li><li aria-current="page">Mentions légales</li></ol>
+      <ol><li><a href="/">Accueil</a></li><li aria-current="page">Offres</li></ol>
     </nav>
   </div>
 
   <section class="tete-page">
     <div class="conteneur">
-      <h1>Mentions légales</h1>
-      <p class="maj-page">Dernière mise à jour : septembre 2026.</p>
+      <h1>Les offres, sur tout le cycle de vie du dirigeant</h1>
+      <p class="chapeau">Quatre temps forts, de la prise de poste à la transition, et une offre pour chacun : coaching individuel, coaching d'équipe, formation et accompagnement des transitions.</p>
     </div>
   </section>
 
-  <div class="conteneur reg">
-    <div class="reg-grille">
-      <nav class="reg-nav" aria-label="Pages d'information">
-        <h2>Informations</h2>
-        <a href="/mentions-legales" aria-current="page">Mentions légales</a>
-        <a href="/confidentialite">Politique de confidentialité</a>
-        <a href="/qualiopi">Qualité et certification Qualiopi</a>
-        <a href="/accessibilite">Accessibilité</a>
-      </nav>
-
-      <div class="reg-corps">
-        <h2>Éditeur du site</h2>
-        <p>ACC, Andreu Coaching &amp; Conseil<br>
-        Société à responsabilité limitée à associé unique au capital de 1 000 €<br>
-        Siège social : 79 rue du Vieux Pont, 92000 Nanterre<br>
-        RCS Nanterre 880 612 395 (immatriculation du 14 janvier 2020), SIREN 880 612 395, SIRET 880 612 395 00017<br>
-        TVA intracommunautaire : FR 02 880 612 395</p>
-        <p>Téléphone : <a href="tel:+33624392527">+33 6 24 39 25 27</a><br>
-        Courriel : <a href="mailto:christophe.andreu@acc-coaching.fr">christophe.andreu@acc-coaching.fr</a></p>
-        <p>Directeur de la publication : Christophe Andreu, gérant.</p>
-
-        <h2>Organisme de formation</h2>
-        <p>Déclaration d'activité enregistrée sous le numéro 11 92 257 53 92 auprès du préfet de la région Île-de-France. Cet enregistrement ne vaut pas agrément de l'État.</p>
-        <p>ACC est certifié Qualiopi au titre des actions de formation et des bilans de compétences. <a href="/qualiopi">Voir la page Qualité et certification Qualiopi</a>.</p>
-
-        <h2>Hébergement</h2>
-        <p>Le site est hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis, <a href="https://www.cloudflare.com" rel="noopener">cloudflare.com</a>.</p>
-
-        <h2>Propriété intellectuelle</h2>
-        <p>Les textes, visuels, logos et contenus de ce site sont la propriété d'ACC. Toute reproduction, même partielle, sans autorisation écrite est interdite. Les marques et logos des entreprises citées en référence restent la propriété de leurs détenteurs. Le logo Qualiopi est la propriété du ministère du Travail.</p>
-
-        <h2>Conception et réalisation</h2>
-        <p>Conception et réalisation : ACC.</p>
-
-        <h2>Liens hypertextes</h2>
-        <p>Ce site peut renvoyer vers des sites tiers, dont ACC ne maîtrise ni le contenu ni les pratiques. Leur consultation relève de votre responsabilité.</p>
-      </div>
+  <section class="section" style="padding-top: 16px;" aria-label="Les quatre temps du cycle">
+    <div class="conteneur">
+      <ol class="cycle">
+        <li class="temps"><a href="/prise-de-poste">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FF3300"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#AA0000"/></svg>
+          <span class="sr-only">Étape 1 sur 4 :</span>
+          <h3>Réussir sa prise de poste</h3>
+          <p>Sécuriser les premiers mois, clarifier les attentes, installer sa légitimité auprès de son équipe et de sa gouvernance.</p>
+          <span class="suite">En savoir plus</span>
+        </a></li>
+        <li class="temps"><a href="/leadership">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FFBF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#FF8000"/></svg>
+          <span class="sr-only">Étape 2 sur 4 :</span>
+          <h3>Développer son leadership</h3>
+          <p>Faire évoluer sa posture, exploiter un feedback 360°, mieux se connaître pour mieux décider.</p>
+          <span class="suite">En savoir plus</span>
+        </a></li>
+        <li class="temps"><a href="/equipe">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#006BFF"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#0038FF"/></svg>
+          <span class="sr-only">Étape 3 sur 4 :</span>
+          <h3>Faire grandir l'équipe</h3>
+          <p>Construire une vision partagée, renforcer l'alliance d'un comité de direction, développer les compétences managériales.</p>
+          <span class="suite">En savoir plus</span>
+        </a></li>
+        <li class="temps"><a href="/transition">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#00BF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#008000"/></svg>
+          <span class="sr-only">Étape 4 sur 4 :</span>
+          <h3>Réussir sa transition</h3>
+          <p>Transformer un départ en repositionnement stratégique, valoriser son parcours, préparer sereinement le poste suivant.</p>
+          <span class="suite">En savoir plus</span>
+        </a></li>
+      </ol>
     </div>
+  </section>
+
+  <section class="bloc-offre" id="catalogue" aria-labelledby="t-catalogue">
+    <div class="conteneur">
+      <h2 id="t-catalogue">Le catalogue</h2>
+      <p class="accroche">Les accompagnements, rangés par temps du cycle, puis les formations, qui répondent à des besoins de compétences indépendants du moment de carrière. Chaque ligne renvoie vers la page détaillée.</p>
+      <div class="catalogue">
+        <section class="cat-col t1" aria-labelledby="cat-t1">
+          <header class="cat-tete">
+            <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FF3300"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#AA0000"/></svg>
+            <div><span class="sr-only">Étape 1 sur 4 :</span><h3 id="cat-t1">Réussir sa prise de poste</h3></div>
+          </header>
+          <ul class="cat-liste">
+            <li><a href="/prise-de-poste"><span class="cat-nom">Coaching de prise de poste</span><span class="cat-fmt">10 séances de 2 heures, tripartites et test psychométrique inclus</span><span class="cat-prix">À partir de 8 000 € HT</span></a></li>
+          </ul>
+        </section>
+        <section class="cat-col t2" aria-labelledby="cat-t2">
+          <header class="cat-tete">
+            <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#FFBF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#FF8000"/></svg>
+            <div><span class="sr-only">Étape 2 sur 4 :</span><h3 id="cat-t2">Développer son leadership</h3></div>
+          </header>
+          <ul class="cat-liste">
+            <li><a href="/leadership"><span class="cat-nom">Coaching exécutif individuel</span><span class="cat-fmt">10 séances de 2 heures, tripartites et test psychométrique inclus</span><span class="cat-prix">À partir de 8 000 € HT</span></a></li><li><a href="/leadership"><span class="cat-nom">Débriefing 360°</span><span class="cat-fmt">Séance de restitution, seule ou en ouverture de coaching</span><span class="cat-prix">Sur devis</span></a></li>
+          </ul>
+        </section>
+        <section class="cat-col t3" aria-labelledby="cat-t3">
+          <header class="cat-tete">
+            <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#006BFF"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#0038FF"/></svg>
+            <div><span class="sr-only">Étape 3 sur 4 :</span><h3 id="cat-t3">Faire grandir l'équipe</h3></div>
+          </header>
+          <ul class="cat-liste">
+            <li><a href="/equipe"><span class="cat-nom">Coaching d'équipe de direction</span><span class="cat-fmt">3 journées, cadrage en amont et régulation à 3 mois</span><span class="cat-prix">Sur devis</span></a></li>
+          </ul>
+        </section>
+        <section class="cat-col t4" aria-labelledby="cat-t4">
+          <header class="cat-tete">
+            <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#00BF00"/><path d="M5.86,5.86 A20,20 0 0,1 34.14,34.14 Z" fill="#008000"/></svg>
+            <div><span class="sr-only">Étape 4 sur 4 :</span><h3 id="cat-t4">Réussir sa transition</h3></div>
+          </header>
+          <ul class="cat-liste">
+            <li><a href="/transition"><span class="cat-nom">Outplacement exécutif</span><span class="cat-fmt">10 séances de 2 heures sur environ 6 mois, suivi à 90 jours</span><span class="cat-prix">Sur devis</span></a></li><li><a href="/transition"><span class="cat-nom">Bilan de compétences</span><span class="cat-fmt">24 heures sur 12 à 16 semaines, 100 % à distance, éligible CPF</span><span class="cat-prix">3 000 € TTC</span></a></li>
+          </ul>
+        </section>
+      </div>
+      
+      <section class="cat-form" aria-labelledby="cat-form">
+        <header class="cat-tete">
+          <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#FF3300"/><circle cx="30" cy="10" r="9" fill="#FFBF00"/><circle cx="10" cy="30" r="9" fill="#006BFF"/><circle cx="30" cy="30" r="9" fill="#00BF00"/></svg>
+          <div><span class="cat-rang">Transverses au cycle · intra-entreprise · organisme certifié Qualiopi</span><h3 id="cat-form">Formations</h3></div>
+        </header>
+        <ul class="cat-form-liste">
+          <li><a href="/equipe"><span class="cat-nom">Management et leadership</span><span class="cat-fmt">3 journées pour le niveau 1, niveau 2 disponible</span><span class="cat-fmt">Managers, managers de managers</span><span class="cat-prix">Sur devis</span></a></li>
+          <li><a href="/equipe"><span class="cat-nom">Intelligence émotionnelle</span><span class="cat-fmt">2 journées consécutives, en présentiel</span><span class="cat-fmt">Managers et cadres dirigeants, 8 à 12 participants</span><span class="cat-prix">Sur devis</span></a></li>
+          <li><a href="/equipe"><span class="cat-nom">Techniques du conseil</span><span class="cat-fmt">3 journées pour le niveau 1, niveau 2 disponible</span><span class="cat-fmt">Consultants, équipes en relation client</span><span class="cat-prix">Sur devis</span></a></li>
+          <li><a href="/equipe"><span class="cat-nom">Culture du feedback</span><span class="cat-fmt">1 journée ou 2 demi-journées</span><span class="cat-fmt">Équipes constituées, collectifs de managers</span><span class="cat-prix">Sur devis</span></a></li>
+        </ul>
+      </section>
+      <p class="cat-note">Les formations sont éligibles aux financements des opérateurs de compétences. Chaque programme détaillé est remis sur demande. Vous êtes DRH ? <a href="/drh">Voir l'offre présentée pour les directions des ressources humaines</a>.</p>
+    </div>
+  </section>
+
+  <div class="conteneur" id="contact" style="padding-top: clamp(48px, 7vw, 88px);">
+    <section class="appel" aria-labelledby="titre-appel">
+      <div>
+        <h2 id="titre-appel">Parlons de votre situation</h2>
+        <p>Un premier échange de 30 minutes, sans engagement, pour comprendre votre besoin et voir si je suis le bon interlocuteur.</p>
+      </div>
+      <div class="appel-actions">
+        <a class="btn btn-clair" href="https://tally.so/r/lbpZMp" target="_blank" rel="noopener">Préciser votre besoin en 3 minutes</a>
+        <a class="btn btn-clair" href="https://calendly.com/christophe-andreu/30min/" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <a class="btn btn-clair" href="tel:+33624392527">Appeler le +33 6 24 39 25 27</a>
+      </div>
+    </section>
   </div>
 </main>
 
