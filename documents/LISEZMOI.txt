@@ -1,0 +1,10 @@
+Documents téléchargeables attendus par le site (liens déjà branchés).
+Déposer ici les PDF exportés depuis Word, sous ces noms exacts :
+
+acc-programme-bilan-de-competences.pdf      (version 100 % distanciel, Google Meet)
+acc-livret-accueil-bilan-de-competences.pdf (version 100 % distanciel)
+acc-cgv-bilan-de-competences.pdf
+acc-cgv-formations.pdf
+acc-reglement-interieur.pdf
+acc-charte-deontologie-formateur.pdf
+acc-certificat-qualiopi.pdf
