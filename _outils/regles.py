@@ -79,6 +79,7 @@ FAITS = [
     ("qualiopi", "9 répondants", "Qualiopi : répondants atteinte des objectifs bilans"),
     ("qualiopi", "hors prestations en sous-traitance", "Qualiopi : périmètre des indicateurs bilan en direct"),
     ("qualiopi", "Mis à jour le 19 octobre 2026", "Qualiopi : date des indicateurs bilan"),
+    ("qualiopi", "Dernière mise à jour : octobre 2026", "Qualiopi : date de mise à jour de la page"),
     ("qualiopi", "bilans terminés / bilans démarrés", "Qualiopi : méthode de calcul des bilans en direct"),
     ("qualiopi", "<b>283</b>", "Qualiopi : 283 bilans en sous-traitance"),
     ("qualiopi", "<b>83 %</b>", "Qualiopi : recommandation des bilans en sous-traitance"),
