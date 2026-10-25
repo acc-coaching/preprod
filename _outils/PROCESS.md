@@ -98,7 +98,8 @@ DNS est en place ; à diagnostiquer côté GitHub.
 **Médiateur de la consommation.** Obligation du code de la consommation pour les
 prestations vendues à des particuliers, dont les bilans financés par le compte personnel de
 formation : adhérer à un médiateur agréé, puis afficher son nom, son adresse postale et son
-site dans les mentions légales et les conditions générales de vente.
+site dans les mentions légales et les conditions générales de vente. Décision du 25/10/2026 :
+nommer le médiateur sur /mentions-legales et /cgu après l'audit, une fois l'adhésion faite.
 
 **Accords de sous-traitance (RGPD).** Tally, Calendly, Google et GitHub traitent des données
 personnelles pour le compte d'ACC : conserver l'accord de chacun (article 28 du RGPD) avec le
