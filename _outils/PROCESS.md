@@ -98,5 +98,20 @@ attend l'arbitrage de Christophe.
 **Redirection de www.** `www.acc-coaching.fr` doit rediriger vers `acc-coaching.fr`. Le
 DNS est en place ; à diagnostiquer côté GitHub.
 
-**Médiateur de la consommation, accords de sous-traitance, numéro de TVA** : voir la
-procédure du 9 octobre 2026.
+**Médiateur de la consommation.** Obligation du code de la consommation pour les
+prestations vendues à des particuliers, dont les bilans financés par le compte personnel de
+formation : adhérer à un médiateur agréé, puis afficher son nom, son adresse postale et son
+site dans les mentions légales et les conditions générales de vente.
+
+**Accords de sous-traitance (RGPD).** Tally, Calendly, Google et GitHub traitent des données
+personnelles pour le compte d'ACC : conserver l'accord de chacun (article 28 du RGPD) avec le
+registre des traitements.
+
+**Numéro de TVA.** `FR 02 880 612 395`, affiché dans les mentions légales, à vérifier.
+
+**Formulaire Tally.** À intégrer en cadre dans la page Contact plutôt qu'en lien sortant.
+
+**Séance photo.** Prévue en janvier 2027 ; les deux portraits actuels seront remplacés.
+
+**Référencement.** Déclarer le site dans Google Search Console avec
+`https://acc-coaching.fr/sitemap.xml`, et créer la fiche Google Business Profile.
