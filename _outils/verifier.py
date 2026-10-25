@@ -29,14 +29,20 @@ EMOJIS = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
 
 class Rapport:
-    def __init__(self):
+    def __init__(self, env):
+        self.env = env
         self.lignes = []
 
     def verifier(self, condition, regle, detail_ko, detail_ok=""):
         if condition:
             self.lignes.append(("OK", regle, detail_ok))
             return
-        admis = next((raison for prefixe, raison in ECARTS_ADMIS.items() if regle.startswith(prefixe)), None)
+        admis = None
+        for prefixe, valeur in ECARTS_ADMIS.items():
+            raison, envs = (valeur, None) if isinstance(valeur, str) else valeur
+            if regle.startswith(prefixe) and (envs is None or self.env in envs):
+                admis = raison
+                break
         if admis:
             self.lignes.append(("ALERTE", regle, f"{detail_ko} — écart admis : {admis}"))
         else:
@@ -225,6 +231,25 @@ def controles_liens(r, dossier, sources):
     r.verifier(regles.TALLY in sources.get("contact", ""), "Liens — questionnaire Tally sur la page Contact", "lien absent")
 
 
+def controles_documents(r, dossier):
+    import subprocess
+    docs = dossier / "documents"
+    attendus = getattr(regles, "DOCUMENTS", {})
+    for nom in attendus:
+        r.verifier((docs / nom).exists(), f"Documents — {nom} déposé", "absent du dossier documents/")
+    for pdf in sorted(docs.glob("*.pdf")):
+        r.verifier(pdf.name in attendus, f"Documents — {pdf.name} référencé dans regles.py", "fichier inconnu des règles")
+        info = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout
+        auteur = next((l.split(":", 1)[1].strip() for l in info.splitlines() if l.startswith("Author:")), "")
+        r.verifier(auteur in regles.AUTEURS_ADMIS, f"Documents — métadonnées sans nom de tiers ({pdf.name})", f"auteur : {auteur}")
+        texte = subprocess.run(["pdftotext", "-q", str(pdf), "-"], capture_output=True, text=True).stdout
+        for motif, cibles, raison in getattr(regles, "INTERDITS_DOCUMENTS", []):
+            if cibles and pdf.name not in cibles:
+                continue
+            trouves = sorted({m.group(0) for m in re.finditer(motif, texte)})
+            r.verifier(not trouves, f"Documents — vocabulaire : {raison} ({pdf.name})", "trouvé : " + ", ".join(trouves))
+
+
 # ----------------------------------------------------------------------
 # 3. Rendu
 # ----------------------------------------------------------------------
@@ -320,7 +345,7 @@ def main():
     a = ap.parse_args()
     dossier = pathlib.Path(a.dossier).resolve()
 
-    r = Rapport()
+    r = Rapport(a.env)
     sources = {}
     for cle, fichier in config.PAGES.items():
         f = dossier / fichier
@@ -331,6 +356,7 @@ def main():
     controles_environnement(r, dossier, a.env)
     controles_contenu(r, dossier, sources)
     controles_liens(r, dossier, sources)
+    controles_documents(r, dossier)
     if not a.sans_rendu:
         controles_rendu(r, dossier, sources)
 

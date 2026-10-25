@@ -1,6 +1,6 @@
 # Site ACC — process de mise à jour
 
-Référence du circuit de publication de acc-coaching.fr. Mis à jour le 25 octobre 2026.
+Référence du circuit de publication de acc-coaching.fr. Mis à jour le 25 octobre 2026 (v2 : sources Qualiopi, contrôle des documents).
 
 ## Les deux environnements
 
@@ -31,6 +31,23 @@ reconstruite à chaque promotion à partir de la préprod validée.
 | 5. Promotion vers la prod | Claude | `promouvoir.py` : répétition à blanc, puis publication si tous les tests passent en mode prod |
 | 6. Contrôle de la prod | Claude puis Christophe | Contrôle en ligne dans Chrome, puis validation finale |
 
+## Les sources Qualiopi
+
+Les données Qualiopi publiées sur le site viennent du dossier de Christophe
+`OneDrive\Documents\00.ACC\00.Pilotage\Qualiopi-BPF-NDA-EDOF\Qualiopi`, toujours dans
+la version la plus récente, jamais dans `ZZ.Archives`.
+
+| Donnée publiée | Source |
+| --- | --- |
+| Indicateurs des bilans (direct et sous-traitance) et des formations en direct | `10.Transverse/90.Information du public/AAAAMMJJ-ACC-Information du public.docx` |
+| Indicateurs de la formation au management en sous-traitance | `30.Formation/90.Sous-traitance Opale Conseil/20.Indicateurs de satisfaction des participants/` |
+| Documents téléchargeables | PDF exportés à côté de chaque .docx, liste et chemins dans `regles.py` (`DOCUMENTS`) |
+
+Règles de publication : les plateformes et donneurs d'ordre ne sont jamais nommés (« un
+opérateur national de bilans de compétences », « un organisme de formation »), les prénoms
+des formateurs partenaires ne sont jamais repris, le nom d'auteur hérité du modèle Word est
+remplacé par « ACC » dans les métadonnées des PDF.
+
 ## Les outils (dossier `_outils/` du dépôt préprod)
 
 Le dossier commence par un tiret bas : GitHub Pages ne le publie pas, et il n'est jamais
@@ -44,9 +61,11 @@ domaine, le `CNAME` et le `robots.txt` de chaque environnement.
 qui évolue d'une mise à jour à l'autre.
 
 `verifier.py` exécute les contrôles : environnement (indexation, domaine, sitemap),
-contenu, liens, documents téléchargeables, et rendu de chaque page dans un navigateur à
+contenu, liens, documents téléchargeables (présence, métadonnées, vocabulaire du texte des
+PDF), et rendu de chaque page dans un navigateur à
 390, 760, 1100 et 1440 px. Un échec bloque la publication. Un écart admis par Christophe
-apparaît en alerte sans bloquer.
+apparaît en alerte sans bloquer ; un écart admis en préprod seulement bloque la mise en prod
+tant qu'il n'est pas tranché.
 
 `promouvoir.py` reconstruit la prod depuis la préprod validée : il refuse de partir si la
 préprod locale diffère de celle en ligne, retire la balise `noindex`, régénère le `CNAME`
@@ -67,14 +86,14 @@ puis envoi. Le site revient à la version précédente en une à deux minutes.
 
 ## Points ouverts
 
-**Documents réglementaires.** Les liens des pages Qualité et Réussir sa transition
-renvoient vers sept PDF absents du dossier `documents/`. Écart admis le 25/10/2026, à
-résoudre par la mise à jour des bilans de compétences.
+**Contenu de trois PDF.** Le programme et le livret d'accueil du bilan décrivent encore des
+séances en présentiel à Nanterre et Zoom ; la procédure de prévention nomme deux donneurs
+d'ordre. Écart admis en préprod seulement (25/10/2026) : la mise en prod attend l'arbitrage.
 
 **Données structurées `schema.org`.** Absentes du dépôt, à porter dans une passe dédiée.
 
 **Redirection de www.** `www.acc-coaching.fr` doit rediriger vers `acc-coaching.fr`. Le
-DNS est en place ; à vérifier une fois le certificat HTTPS émis par GitHub.
+DNS est en place ; à diagnostiquer côté GitHub.
 
 **Médiateur de la consommation, accords de sous-traitance, numéro de TVA** : voir la
 procédure du 9 octobre 2026.

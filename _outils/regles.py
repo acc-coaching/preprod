@@ -33,6 +33,10 @@ INTERDITS = [
     (r"accompagnées depuis 2020|\b272\b", "Indicateurs bilan périmés : 272 personnes depuis 2020"),
     (r"13 octobre 2025", "Date d'indicateurs bilan périmée (màj 08/10/2026)"),
     (r"Cloudflare", "Hébergement sur GitHub Pages, plus de Cloudflare"),
+    (r"Opale", "Sous-traitance formation : ne pas nommer le donneur d'ordre"),
+    (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
+    (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
+    (r"\b93 %", "Atteinte des objectifs des bilans : 94 % au 19/10/2026"),
 ]
 
 # Contenus attendus : (page, texte exact, intitulé de la règle)
@@ -65,26 +69,70 @@ FAITS = [
     ("confidentialite", "Tally, Calendly, Google et GitHub", "Confidentialité : sous-traitants à jour (GitHub)"),
     ("cgu", "Aucune prestation n'est vendue ni payée en ligne", "CGU : pas de vente en ligne"),
     ("cgu", "ce sont eux qui prévalent sur les présentes conditions", "CGU : primauté des CGV et conventions"),
-    # Indicateurs des bilans de compétences — mis à jour le 08/10/2026
-    ("qualiopi", "personnes accompagnées depuis 2023", "Qualiopi : millésime des bilans (2023)"),
+    # Indicateurs Qualiopi — source : fiche « Information du public » du 19/10/2026
+    # et synthèse de satisfaction de la formation en sous-traitance du 25/10/2026
+    ("qualiopi", "bilans terminés depuis 2023", "Qualiopi : volume des bilans en direct (14 depuis 2023)"),
+    ("qualiopi", "<b>14</b>", "Qualiopi : 14 bilans en direct"),
     ("qualiopi", "de bilans menés à terme", "Qualiopi : indicateur d'abandon"),
-    ("qualiopi", "hors prestations en sous-traitance", "Qualiopi : périmètre des indicateurs bilan"),
-    ("qualiopi", "Mis à jour le 8 octobre 2026", "Qualiopi : date des indicateurs bilan"),
-    ("qualiopi", "personnes formées depuis 2023", "Qualiopi : indicateurs formations préservés"),
-    ("qualiopi", "Mis à jour le 4 août 2025", "Qualiopi : date des indicateurs formations préservée"),
-    ("transition", "personnes accompagnées depuis 2023", "Transition : millésime des bilans (2023)"),
+    ("qualiopi", "<b>94 %</b>", "Qualiopi : atteinte des objectifs des bilans à 94 %"),
+    ("qualiopi", "10 répondants", "Qualiopi : répondants satisfaction bilans"),
+    ("qualiopi", "9 répondants", "Qualiopi : répondants atteinte des objectifs bilans"),
+    ("qualiopi", "hors prestations en sous-traitance", "Qualiopi : périmètre des indicateurs bilan en direct"),
+    ("qualiopi", "Mis à jour le 19 octobre 2026", "Qualiopi : date des indicateurs bilan"),
+    ("qualiopi", "bilans terminés / bilans démarrés", "Qualiopi : méthode de calcul des bilans en direct"),
+    ("qualiopi", "<b>283</b>", "Qualiopi : 283 bilans en sous-traitance"),
+    ("qualiopi", "<b>83 %</b>", "Qualiopi : recommandation des bilans en sous-traitance"),
+    ("qualiopi", "opérateur national de bilans de compétences", "Qualiopi : sous-traitance bilans sans nommer la plateforme"),
+    ("qualiopi", "142 réponses", "Qualiopi : base de la note de recommandation"),
+    ("qualiopi", "Techniques du conseil", "Qualiopi : indicateurs formation rattachés aux Techniques du conseil"),
+    ("qualiopi", "personnes formées depuis 2023", "Qualiopi : indicateurs formations en direct"),
+    ("qualiopi", "Mis à jour le 6 octobre 2026", "Qualiopi : date des indicateurs formations en direct"),
+    ("qualiopi", "<b>201</b>", "Qualiopi : 201 personnes formées en sous-traitance"),
+    ("qualiopi", "75 réponses", "Qualiopi : base de la satisfaction formation en sous-traitance"),
+    ("qualiopi", "Mis à jour le 25 octobre 2026", "Qualiopi : date des indicateurs formation en sous-traitance"),
+    ("qualiopi", "Prévention des violences, du harcèlement et des discriminations", "Qualiopi : rubrique prévention des violences"),
+    ("qualiopi", "documents/acc-procedure-prevention-violences-harcelement-discriminations.pdf", "Qualiopi : lien vers la procédure de prévention"),
+    ("transition", "bilans terminés depuis 2023", "Transition : volume des bilans en direct"),
+    ("transition", "<b>94 %</b>", "Transition : atteinte des objectifs à 94 %"),
+    ("transition", "10 répondants", "Transition : répondants satisfaction"),
     ("transition", "de bilans menés à terme", "Transition : indicateur d'abandon"),
     ("transition", "hors prestations en sous-traitance", "Transition : périmètre des indicateurs bilan"),
-    ("transition", "Mis à jour le 8 octobre 2026", "Transition : date des indicateurs bilan"),
+    ("transition", "Mis à jour le 19 octobre 2026", "Transition : date des indicateurs bilan"),
+    ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
+    ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
+    ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
 ]
+
+# Documents téléchargeables : (fichier, sources dans le dossier Qualiopi de Christophe)
+DOCUMENTS = {
+    "acc-programme-bilan-de-competences.pdf": "20.Bilan de compétences/10.Programme de bilan de compétences/ACC-Bilan de compétences-Programme.pdf",
+    "acc-livret-accueil-bilan-de-competences.pdf": "20.Bilan de compétences/40.Convocation et livret d'accueil/ACC-Bilan de compétences-Livret d'accueil.pdf",
+    "acc-cgv-bilan-de-competences.pdf": "20.Bilan de compétences/30.Contrat et CGV/ACC-Bilan de compétences-CGV.pdf",
+    "acc-cgv-formations.pdf": "30.Formation/30.Convocation/ACC-Formation-CGV.pdf",
+    "acc-reglement-interieur.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Règlement intérieur.pdf",
+    "acc-procedure-prevention-violences-harcelement-discriminations.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Procédure de prévention et de traitement des violences-harcèlement-discriminations.pdf",
+    "acc-charte-deontologie-formateur.pdf": "10.Transverse/50.Adéquation des moyens pédagogiques et techniques/ACC-Déontologie du formateur et du consultant.pdf",
+    "acc-certificat-qualiopi.pdf": "40.Audits Certifopac/60.Certificat Qualiopi/Certificat Qualiopi - Mise à jour le 24.06.2024.pdf",
+}
+# Vocabulaire proscrit dans le texte des PDF publiés : (motif, documents concernés ou None pour tous, décision)
+INTERDITS_DOCUMENTS = [
+    (r"CoachHub|EZRA|LHH|Click ?& ?Coach|\bChance\b|Opale", None, "Marque ACC seule, sans plateformes ni donneurs d'ordre"),
+    (r"\bZoom\b", None, "Visioconférence sur Google Meet uniquement"),
+    (r"en présentiel dans les locaux|séances? en présentiel|bilans en présentiel",
+     ("acc-programme-bilan-de-competences.pdf", "acc-livret-accueil-bilan-de-competences.pdf"),
+     "Bilan de compétences 100 % à distance"),
+]
+# Auteurs admis dans les métadonnées des PDF publiés (aucun nom de tiers)
+AUTEURS_ADMIS = {"", "ACC", "Christophe Andreu", "Christophe ANDREU"}
 
 # Ordre des secteurs sur la page Références
 SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats", "Tech, digital, télécoms",
             "Luxe, consommation, distribution", "Énergie, industrie, construction", "Services, santé, éducation"]
 
-# Écarts admis : signalés en ALERTE sans bloquer la publication.
-# Chaque entrée est une décision de Christophe, datée, à retirer dès que l'écart est résolu.
+# Écarts admis : signalés en ALERTE sans bloquer.
+# Clé : début de l'intitulé de la règle. Valeur : (décision datée, environnements où l'écart est admis).
+# Un écart admis seulement en préprod bloque la mise en production tant que Christophe n'a pas tranché.
 ECARTS_ADMIS = {
-    "Documents — fichiers présents": "PDF réglementaires pas encore déposés, liens morts déjà présents en ligne ; "
-                                     "à résoudre par la mise à jour des bilans (25/10/2026)",
+    "Documents — vocabulaire": ("PDF à mettre à jour par Christophe (100 % distanciel, plateformes nommées), "
+                                "relevé le 25/10/2026, en attente d'arbitrage", ("preprod",)),
 }
