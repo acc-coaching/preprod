@@ -37,11 +37,15 @@ INTERDITS = [
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
     (r"\b93 %", "Atteinte des objectifs des bilans : 94 % au 19/10/2026"),
+    (r"entièrement à distance|Il se déroule à distance|>100 % à distance", "Bilan : en présentiel ou 100 % à distance (décision du 25/10/2026)"),
 ]
 
 # Contenus attendus : (page, texte exact, intitulé de la règle)
 FAITS = [
-    ("transition", "100 % à distance", "Bilan de compétences 100 % à distance"),
+    ("transition", "En présentiel ou 100 % à distance, sur Google Meet", "Bilan : en présentiel ou 100 % à distance sur Google Meet (fiche)"),
+    ("transition", "dans les locaux d'ACC à Nanterre, ou 100 % à distance", "Bilan : en présentiel ou 100 % à distance (modalités)"),
+    ("offres", "en présentiel ou 100 % à distance, éligible CPF", "Bilan : modalités dans le catalogue"),
+    ("drh", "en présentiel ou 100 % à distance sur Google Meet", "Bilan : modalités sur la page DRH"),
     ("transition", "Google Meet", "Bilan sur Google Meet"),
     ("transition", "10 séances de 2 heures", "Outplacement en 10 séances de 2 heures"),
     ("mentions", "à associé unique au capital de 1 000", "Forme juridique conforme au Kbis"),
@@ -119,9 +123,6 @@ DOCUMENTS = {
 INTERDITS_DOCUMENTS = [
     (r"CoachHub|EZRA|LHH|Click ?& ?Coach|\bChance\b|Opale", None, "Marque ACC seule, sans plateformes ni donneurs d'ordre"),
     (r"\bZoom\b", None, "Visioconférence sur Google Meet uniquement"),
-    (r"en présentiel dans les locaux|séances? en présentiel|bilans en présentiel",
-     ("acc-programme-bilan-de-competences.pdf", "acc-livret-accueil-bilan-de-competences.pdf"),
-     "Bilan de compétences 100 % à distance"),
 ]
 # Auteurs admis dans les métadonnées des PDF publiés (aucun nom de tiers)
 AUTEURS_ADMIS = {"", "ACC", "Christophe Andreu", "Christophe ANDREU"}
@@ -134,6 +135,7 @@ SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats"
 # Clé : début de l'intitulé de la règle. Valeur : (décision datée, environnements où l'écart est admis).
 # Un écart admis seulement en préprod bloque la mise en production tant que Christophe n'a pas tranché.
 ECARTS_ADMIS = {
-    "Documents — vocabulaire": ("PDF à mettre à jour par Christophe (100 % distanciel, plateformes nommées), "
-                                "relevé le 25/10/2026, en attente d'arbitrage", ("preprod",)),
+    "Documents — vocabulaire": ("PDF à mettre à jour par Christophe (Zoom dans le programme du bilan, "
+                                "plateformes nommées dans la procédure de prévention), relevé le 25/10/2026, "
+                                "en attente d'arbitrage", ("preprod",)),
 }

@@ -43,6 +43,9 @@ la version la plus récente, jamais dans `ZZ.Archives`.
 | Indicateurs de la formation au management en sous-traitance | `30.Formation/90.Sous-traitance Opale Conseil/20.Indicateurs de satisfaction des participants/` |
 | Documents téléchargeables | PDF exportés à côté de chaque .docx, liste et chemins dans `regles.py` (`DOCUMENTS`) |
 
+Modalités du bilan : le site annonce « en présentiel ou 100 % à distance sur Google Meet »,
+sans détailler les cas (décision du 25/10/2026).
+
 Règles de publication : les plateformes et donneurs d'ordre ne sont jamais nommés (« un
 opérateur national de bilans de compétences », « un organisme de formation »), les prénoms
 des formateurs partenaires ne sont jamais repris, le nom d'auteur hérité du modèle Word est
@@ -86,9 +89,9 @@ puis envoi. Le site revient à la version précédente en une à deux minutes.
 
 ## Points ouverts
 
-**Contenu de trois PDF.** Le programme et le livret d'accueil du bilan décrivent encore des
-séances en présentiel à Nanterre et Zoom ; la procédure de prévention nomme deux donneurs
-d'ordre. Écart admis en préprod seulement (25/10/2026) : la mise en prod attend l'arbitrage.
+**Contenu de deux PDF.** Le programme du bilan cite encore Zoom ; la procédure de prévention
+nomme deux donneurs d'ordre. Écart admis en préprod seulement (25/10/2026) : la mise en prod
+attend l'arbitrage de Christophe.
 
 **Données structurées `schema.org`.** Absentes du dépôt, à porter dans une passe dédiée.
 
