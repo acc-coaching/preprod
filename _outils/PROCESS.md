@@ -49,7 +49,8 @@ sans détailler les cas (décision du 25/10/2026).
 Règles de publication : les plateformes et donneurs d'ordre ne sont jamais nommés (« un
 opérateur national de bilans de compétences », « un organisme de formation »), les prénoms
 des formateurs partenaires ne sont jamais repris, le nom d'auteur hérité du modèle Word est
-remplacé par « ACC » dans les métadonnées des PDF.
+remplacé par « ACC » dans les métadonnées des PDF. Les procédures internes (dont la procédure de
+prévention des violences) ne sont pas publiées : le site reprend le paragraphe du programme.
 
 ## Les outils (dossier `_outils/` du dépôt préprod)
 
@@ -88,10 +89,6 @@ Si la prod pose problème après publication : `git revert` du dernier commit de
 puis envoi. Le site revient à la version précédente en une à deux minutes.
 
 ## Points ouverts
-
-**Contenu de deux PDF.** Le programme du bilan cite encore Zoom ; la procédure de prévention
-nomme deux donneurs d'ordre. Écart admis en préprod seulement (25/10/2026) : la mise en prod
-attend l'arbitrage de Christophe.
 
 **Données structurées `schema.org`.** Absentes du dépôt, à porter dans une passe dédiée.
 

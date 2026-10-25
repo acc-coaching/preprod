@@ -34,6 +34,7 @@ INTERDITS = [
     (r"13 octobre 2025", "Date d'indicateurs bilan périmée (màj 08/10/2026)"),
     (r"Cloudflare", "Hébergement sur GitHub Pages, plus de Cloudflare"),
     (r"Opale", "Sous-traitance formation : ne pas nommer le donneur d'ordre"),
+    (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
     (r"\b93 %", "Atteinte des objectifs des bilans : 94 % au 19/10/2026"),
@@ -96,7 +97,7 @@ FAITS = [
     ("qualiopi", "75 réponses", "Qualiopi : base de la satisfaction formation en sous-traitance"),
     ("qualiopi", "Mis à jour le 25 octobre 2026", "Qualiopi : date des indicateurs formation en sous-traitance"),
     ("qualiopi", "Prévention des violences, du harcèlement et des discriminations", "Qualiopi : rubrique prévention des violences"),
-    ("qualiopi", "documents/acc-procedure-prevention-violences-harcelement-discriminations.pdf", "Qualiopi : lien vers la procédure de prévention"),
+    ("qualiopi", "votre signalement est pris en compte sous 48 heures", "Qualiopi : prévention alignée sur le programme du bilan"),
     ("transition", "bilans terminés depuis 2023", "Transition : volume des bilans en direct"),
     ("transition", "<b>94 %</b>", "Transition : atteinte des objectifs à 94 %"),
     ("transition", "10 répondants", "Transition : répondants satisfaction"),
@@ -115,7 +116,6 @@ DOCUMENTS = {
     "acc-cgv-bilan-de-competences.pdf": "20.Bilan de compétences/30.Contrat et CGV/ACC-Bilan de compétences-CGV.pdf",
     "acc-cgv-formations.pdf": "30.Formation/30.Convocation/ACC-Formation-CGV.pdf",
     "acc-reglement-interieur.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Règlement intérieur.pdf",
-    "acc-procedure-prevention-violences-harcelement-discriminations.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Procédure de prévention et de traitement des violences-harcèlement-discriminations.pdf",
     "acc-charte-deontologie-formateur.pdf": "10.Transverse/50.Adéquation des moyens pédagogiques et techniques/ACC-Déontologie du formateur et du consultant.pdf",
     "acc-certificat-qualiopi.pdf": "40.Audits Certifopac/60.Certificat Qualiopi/Certificat Qualiopi - Mise à jour le 24.06.2024.pdf",
 }
@@ -134,8 +134,4 @@ SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats"
 # Écarts admis : signalés en ALERTE sans bloquer.
 # Clé : début de l'intitulé de la règle. Valeur : (décision datée, environnements où l'écart est admis).
 # Un écart admis seulement en préprod bloque la mise en production tant que Christophe n'a pas tranché.
-ECARTS_ADMIS = {
-    "Documents — vocabulaire": ("PDF à mettre à jour par Christophe (Zoom dans le programme du bilan, "
-                                "plateformes nommées dans la procédure de prévention), relevé le 25/10/2026, "
-                                "en attente d'arbitrage", ("preprod",)),
-}
+ECARTS_ADMIS = {}
