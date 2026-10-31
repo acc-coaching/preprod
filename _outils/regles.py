@@ -37,6 +37,7 @@ INTERDITS = [
     (r"remis sur demande", "Formations : programme établi après l'analyse du besoin (décision du 25/10/2026)"),
     (r"recevant du public", "Locaux d'ACC non aménagés pour l'accueil du public (décision du 25/10/2026)"),
     (r"au plus tard 10 jours", "Convocation du bilan entre 15 et 7 jours avant la première séance (décision du 25/10/2026)"),
+    (r"conserve la faculté de recourir", "Médiateur de la consommation nommé : CM2C (adhésion du 31/10/2026)"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
@@ -114,6 +115,18 @@ FAITS = [
     ("qualiopi", "Les locaux d'ACC à Nanterre ne sont pas aménagés pour l'accueil du public : en cas de mobilité réduite, l'accompagnement est proposé à distance ou dans un lieu accessible. Pour les formations, la salle est mise à disposition par l'entreprise cliente, qui en vérifie l'accessibilité.", "Qualiopi : accessibilité des locaux"),
     ("transition", "Les locaux d'ACC ne sont pas aménagés pour l'accueil du public : en cas de mobilité réduite, le bilan est proposé à distance ou dans un lieu accessible.", "Transition : accessibilité des locaux"),
     ("transition", "Une convocation vous est envoyée par e-mail entre 15 et 7 jours avant la première séance.", "Transition : délai de convocation"),
+    # Médiateur de la consommation — adhésion CM2C du 31/10/2026
+    ("mentions", "Médiation de la consommation", "Mentions légales : rubrique Médiation de la consommation"),
+    ("mentions", "CM2C, Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris", "Mentions légales : identité et adresse du médiateur"),
+    ("mentions", "01 89 47 00 14", "Mentions légales : téléphone du médiateur"),
+    ("mentions", "mailto:cm2c@cm2c.net", "Mentions légales : courriel du médiateur cliquable"),
+    ("mentions", "https://www.cm2c.net", "Mentions légales : site du médiateur cliquable"),
+    ("mentions", "dans un délai d'un an à compter de celle-ci", "Mentions légales : délai de saisine"),
+    ("cgu", "Un consommateur peut recourir gratuitement au médiateur de la consommation dont relève ACC : CM2C", "CGU : médiateur nommé"),
+    ("cgu", 'CM2C (coordonnées dans les <a href="/mentions-legales">mentions légales</a>).', "CGU : renvoi vers les coordonnées du médiateur"),
+    ("mentions", "Dernière mise à jour : octobre 2026", "Mentions légales : date de mise à jour de la page"),
+    ("cgu", "Dernière mise à jour : octobre 2026", "CGU : date de mise à jour de la page"),
+    ("qualiopi", "Si la réponse ne vous satisfait pas, vous pouvez saisir gratuitement le médiateur de la consommation CM2C", "Qualiopi : médiateur dans les réclamations"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -122,7 +135,7 @@ FAITS = [
 # Documents téléchargeables : (fichier, sources dans le dossier Qualiopi de Christophe)
 DOCUMENTS = {
     "acc-programme-bilan-de-competences.pdf": "20.Bilan de compétences/10.Programme de bilan de compétences/ACC-Bilan de compétences-Programme.pdf",
-    "acc-livret-accueil-bilan-de-competences.pdf": "20.Bilan de compétences/40.Convocation et livret d'accueil/ACC-Bilan de compétences-Livret d'accueil.pdf",
+    "acc-livret-accueil-bilan-de-competences.pdf": "20.Bilan de compétences/40.Convocation et livret d'accueil/ACC-Bilan de compétences-Livret d’accueil.pdf",
     "acc-cgv-bilan-de-competences.pdf": "20.Bilan de compétences/30.Contrat et CGV/ACC-Bilan de compétences-CGV.pdf",
     "acc-cgv-formations.pdf": "30.Formation/30.Convocation/ACC-Formation-CGV.pdf",
     "acc-reglement-interieur.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Règlement intérieur.pdf",
@@ -134,6 +147,14 @@ INTERDITS_DOCUMENTS = [
     (r"CoachHub|EZRA|LHH|Click ?& ?Coach|\bChance\b|Opale", None, "Marque ACC seule, sans plateformes ni donneurs d'ordre"),
     (r"\bZoom\b", None, "Visioconférence sur Google Meet uniquement"),
 ]
+# Contenus attendus dans le texte des PDF publiés : (document, texte, intitulé)
+FAITS_DOCUMENTS = [
+    ("acc-cgv-bilan-de-competences.pdf", "Version 20261031", "CGV du bilan : version du 31/10/2026"),
+    ("acc-cgv-bilan-de-competences.pdf", "CM2C", "CGV du bilan : médiateur CM2C"),
+    ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261031", "Livret d'accueil : version du 31/10/2026"),
+    ("acc-livret-accueil-bilan-de-competences.pdf", "CM2C", "Livret d'accueil : médiateur CM2C"),
+]
+
 # Auteurs admis dans les métadonnées des PDF publiés (aucun nom de tiers)
 AUTEURS_ADMIS = {"", "ACC", "Christophe Andreu", "Christophe ANDREU"}
 

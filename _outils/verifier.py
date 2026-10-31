@@ -243,6 +243,9 @@ def controles_documents(r, dossier):
         auteur = next((l.split(":", 1)[1].strip() for l in info.splitlines() if l.startswith("Author:")), "")
         r.verifier(auteur in regles.AUTEURS_ADMIS, f"Documents — métadonnées sans nom de tiers ({pdf.name})", f"auteur : {auteur}")
         texte = subprocess.run(["pdftotext", "-q", str(pdf), "-"], capture_output=True, text=True).stdout
+        for nom, attendu, intitule in getattr(regles, "FAITS_DOCUMENTS", []):
+            if nom == pdf.name:
+                r.verifier(attendu in re.sub(r"\s+", " ", texte), f"Documents — {intitule}", f"« {attendu} » absent de {pdf.name}")
         for motif, cibles, raison in getattr(regles, "INTERDITS_DOCUMENTS", []):
             if cibles and pdf.name not in cibles:
                 continue
