@@ -39,9 +39,10 @@ la version la plus récente, jamais dans `ZZ.Archives`.
 
 | Donnée publiée | Source |
 | --- | --- |
-| Indicateurs des bilans (direct et sous-traitance) et des formations en direct | `10.Transverse/90.Information du public/AAAAMMJJ-ACC-Information du public.docx` |
+| Indicateurs des bilans (direct et sous-traitance) et des formations en direct | `10.Transverse/20.Information du public/AAAAMMJJ-ACC-Information du public.docx` |
 | Indicateurs de la formation au management en sous-traitance | `30.Formation/90.Sous-traitance Opale Conseil/20.Indicateurs de satisfaction des participants/` |
 | Documents téléchargeables | PDF exportés à côté de chaque .docx, liste et chemins dans `regles.py` (`DOCUMENTS`) |
+| Affiche de la politique d'accessibilité | `10.Transverse/70.Situation de handicap/30.RHF-Politique accessibilité-I1-I26/`, affiche RHF de l'année |
 
 Modalités du bilan : le site annonce « en présentiel ou 100 % à distance sur Google Meet »,
 sans détailler les cas (décision du 25/10/2026).

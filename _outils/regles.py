@@ -146,6 +146,10 @@ FAITS = [
     ("equipe", "<dt>Reconnaissance</dt><dd>Formation non certifiante : certificat de réalisation remis à chaque stagiaire</dd>", "Équipe : fiche, reconnaissance"),
     ("equipe", "peuvent être animées à distance en classe virtuelle synchrone", "Équipe : classe virtuelle synchrone"),
     ("equipe", "Assistance technique et pédagogique : <a href=\"mailto:christophe.andreu@acc-coaching.fr\">christophe.andreu@acc-coaching.fr</a>, réponse sous 2 jours ouvrés.", "Équipe : assistance technique et pédagogique"),
+    # Affiche de la politique d'accessibilité — brief du 02/11/2026
+    ("qualiopi", 'href="documents/acc-affiche-politique-accessibilite.pdf" target="_blank" rel="noopener">Affiche de notre politique d\'accessibilité <span>PDF</span>', "Qualiopi : affiche dans la liste des documents"),
+    ("qualiopi", "ACC est engagé dans la démarche de progrès de la Ressource Handicap Formation Île-de-France.", "Qualiopi : démarche RHF"),
+    ("qualiopi", "affiche de politique d'accessibilité (PDF)</a>", "Qualiopi : lien vers l'affiche dans la rubrique accessibilité"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -157,8 +161,9 @@ DOCUMENTS = {
     "acc-livret-accueil-bilan-de-competences.pdf": "20.Bilan de compétences/40.Convocation et livret d'accueil/ACC-Bilan de compétences-Livret d’accueil.pdf",
     "acc-cgv-bilan-de-competences.pdf": "20.Bilan de compétences/30.Contrat et CGV/ACC-Bilan de compétences-CGV.pdf",
     "acc-cgv-formations.pdf": "30.Formation/30.Convocation/ACC-Formation-CGV.pdf",
-    "acc-reglement-interieur.pdf": "10.Transverse/40.Règlement intérieur-Suivi personnalisé-Abandon/ACC-Règlement intérieur.pdf",
-    "acc-charte-deontologie-formateur.pdf": "10.Transverse/50.Adéquation des moyens pédagogiques et techniques/ACC-Déontologie du formateur et du consultant.pdf",
+    "acc-reglement-interieur.pdf": "10.Transverse/30.Procédures et règlement intérieur/Règlement intérieur-I9/ACC-Règlement intérieur.pdf",
+    "acc-charte-deontologie-formateur.pdf": "10.Transverse/30.Procédures et règlement intérieur/Déontologie-I17/ACC-Déontologie du formateur et du consultant.pdf",
+    "acc-affiche-politique-accessibilite.pdf": "10.Transverse/70.Situation de handicap/30.RHF-Politique accessibilité-I1-I26/202611 RHF Politique accessibilité/20261102-ACC-RHF-Affiche politique accessibilité.pdf",
     "acc-certificat-qualiopi.pdf": "40.Audits Certifopac/60.Certificat Qualiopi/Certificat Qualiopi - Mise à jour le 24.06.2024.pdf",
 }
 # Vocabulaire proscrit dans le texte des PDF publiés : (motif, documents concernés ou None pour tous, décision)
@@ -168,6 +173,8 @@ INTERDITS_DOCUMENTS = [
 ]
 # Contenus attendus dans le texte des PDF publiés : (document, texte, intitulé)
 FAITS_DOCUMENTS = [
+    ("acc-affiche-politique-accessibilite.pdf", "est engagé dans la démarche d'accessibilité", "Affiche accessibilité : engagement RHF"),
+    ("acc-affiche-politique-accessibilite.pdf", "Contactez notre référent handicap : Christophe Andreu", "Affiche accessibilité : référent handicap"),
     ("acc-programme-bilan-de-competences.pdf", "Version 20261101", "Programme du bilan : version du 01/11/2026"),
     ("acc-programme-bilan-de-competences.pdf", "non certifiante", "Programme du bilan : type de reconnaissance"),
     ("acc-cgv-formations.pdf", "Version 20261101", "CGV formations : version du 01/11/2026"),
