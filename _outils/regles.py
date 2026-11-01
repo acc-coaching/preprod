@@ -38,6 +38,7 @@ INTERDITS = [
     (r"recevant du public", "Locaux d'ACC non aménagés pour l'accueil du public (décision du 25/10/2026)"),
     (r"au plus tard 10 jours", "Convocation du bilan entre 15 et 7 jours avant la première séance (décision du 25/10/2026)"),
     (r"conserve la faculté de recourir", "Médiateur de la consommation nommé : CM2C (adhésion du 31/10/2026)"),
+    (r"Sur le site définitif", "Mention provisoire de la page Contact retirée (01/11/2026)"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
@@ -88,7 +89,7 @@ FAITS = [
     ("qualiopi", "9 répondants", "Qualiopi : répondants atteinte des objectifs bilans"),
     ("qualiopi", "hors prestations en sous-traitance", "Qualiopi : périmètre des indicateurs bilan en direct"),
     ("qualiopi", "Mis à jour le 19 octobre 2026", "Qualiopi : date des indicateurs bilan"),
-    ("qualiopi", "Dernière mise à jour : octobre 2026", "Qualiopi : date de mise à jour de la page"),
+    ("qualiopi", "Dernière mise à jour : novembre 2026", "Qualiopi : date de mise à jour de la page"),
     ("qualiopi", "bilans terminés / bilans démarrés", "Qualiopi : méthode de calcul des bilans en direct"),
     ("qualiopi", "<b>283</b>", "Qualiopi : 283 bilans en sous-traitance"),
     ("qualiopi", "<b>83 %</b>", "Qualiopi : recommandation des bilans en sous-traitance"),
@@ -126,7 +127,10 @@ FAITS = [
     ("cgu", 'CM2C (coordonnées dans les <a href="/mentions-legales">mentions légales</a>).', "CGU : renvoi vers les coordonnées du médiateur"),
     ("mentions", "Dernière mise à jour : octobre 2026", "Mentions légales : date de mise à jour de la page"),
     ("cgu", "Dernière mise à jour : octobre 2026", "CGU : date de mise à jour de la page"),
-    ("qualiopi", "Si la réponse ne vous satisfait pas, vous pouvez saisir gratuitement le médiateur de la consommation CM2C", "Qualiopi : médiateur dans les réclamations"),
+    ("qualiopi", "Si vous agissez en qualité de consommateur, notamment pour un bilan de compétences financé à titre personnel ou par le compte personnel de formation, et que la réponse ne vous satisfait pas, vous pouvez saisir gratuitement le médiateur de la consommation CM2C", "Qualiopi : médiateur réservé aux consommateurs (01/11/2026)"),
+    ("qualiopi", "Les formations, conclues avec des entreprises, relèvent des relations entre professionnels.", "Qualiopi : formations hors médiation de la consommation"),
+    ("qualiopi", "Le référent qui recueille les signalements est formé à la prévention des violences sexistes et sexuelles.", "Qualiopi : formation du référent violences"),
+    ("contact", "Le questionnaire s'ouvre dans un nouvel onglet.", "Contact : ouverture du questionnaire signalée"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -149,6 +153,8 @@ INTERDITS_DOCUMENTS = [
 ]
 # Contenus attendus dans le texte des PDF publiés : (document, texte, intitulé)
 FAITS_DOCUMENTS = [
+    ("acc-cgv-formations.pdf", "Version 20261101", "CGV formations : version du 01/11/2026"),
+    ("acc-cgv-formations.pdf", "relatives à la médiation de la consommation (articles L.612-1 et suivants) ne s’appliquent pas", "CGV formations : médiation de la consommation non applicable aux professionnels"),
     ("acc-cgv-bilan-de-competences.pdf", "Version 20261031", "CGV du bilan : version du 31/10/2026"),
     ("acc-cgv-bilan-de-competences.pdf", "CM2C", "CGV du bilan : médiateur CM2C"),
     ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261031", "Livret d'accueil : version du 31/10/2026"),
