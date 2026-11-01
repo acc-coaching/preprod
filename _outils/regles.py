@@ -39,6 +39,7 @@ INTERDITS = [
     (r"au plus tard 10 jours", "Convocation du bilan entre 15 et 7 jours avant la première séance (décision du 25/10/2026)"),
     (r"conserve la faculté de recourir", "Médiateur de la consommation nommé : CM2C (adhésion du 31/10/2026)"),
     (r"Sur le site définitif", "Mention provisoire de la page Contact retirée (01/11/2026)"),
+    (r"Pour l'assistance technique à distance", "Assistance technique et pédagogique, réponse sous 2 jours ouvrés (01/11/2026)"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
@@ -50,7 +51,7 @@ INTERDITS = [
 FAITS = [
     ("transition", "En présentiel ou 100 % à distance, sur Google Meet", "Bilan : en présentiel ou 100 % à distance sur Google Meet (fiche)"),
     ("transition", "dans les locaux d'ACC à Nanterre, ou 100 % à distance", "Bilan : en présentiel ou 100 % à distance (modalités)"),
-    ("offres", "en présentiel ou 100 % à distance, éligible CPF", "Bilan : modalités dans le catalogue"),
+    ("offres", "24 heures sur 12 à 16 semaines, en présentiel ou 100 % à distance ; éligible CPF, 100 % à distance", "Bilan : modalités dans le catalogue (CPF 100 % à distance)"),
     ("drh", "en présentiel ou 100 % à distance sur Google Meet", "Bilan : modalités sur la page DRH"),
     ("transition", "Google Meet", "Bilan sur Google Meet"),
     ("transition", "10 séances de 2 heures", "Outplacement en 10 séances de 2 heures"),
@@ -131,6 +132,20 @@ FAITS = [
     ("qualiopi", "Les formations, conclues avec des entreprises, relèvent des relations entre professionnels.", "Qualiopi : formations hors médiation de la consommation"),
     ("qualiopi", "Le référent qui recueille les signalements est formé à la prévention des violences sexistes et sexuelles.", "Qualiopi : formation du référent violences"),
     ("contact", "Le questionnaire s'ouvre dans un nouvel onglet.", "Contact : ouverture du questionnaire signalée"),
+    # Indicateur 1 et distanciel — brief du 01/11/2026 (guide de lecture Qualiopi V10)
+    ("transition", "avec un certificat de réalisation : le bilan est une prestation non certifiante", "Transition : type de reconnaissance du bilan"),
+    ("transition", "Cadre légal : le bilan de compétences est régi par les articles L.6313-1, L.6313-4 et R.6313-4 à R.6313-8 du Code du travail", "Transition : cadre légal du bilan"),
+    ("transition", "Un bilan financé par le CPF se déroule exclusivement à distance.", "Transition : bilan CPF 100 % à distance"),
+    ("transition", "Il comprend 12 heures de séances synchrones (8 séances d'1h30, en présentiel ou en visioconférence) et environ 12 heures de travail personnel à distance", "Transition : quantification des temps synchrones et asynchrones"),
+    ("transition", "Pour l'assistance technique et pédagogique, écrivez à", "Transition : assistance technique et pédagogique"),
+    ("transition", "réponse sous 2 jours ouvrés.", "Transition : délai de réponse de l'assistance"),
+    ("transition", "<dd>8 séances d'1h30 (synchrones) et 12 heures de travail personnel à distance</dd>", "Transition : fiche, séances"),
+    ("transition", "<dd>Finançable par le CPF (bilan alors 100 % à distance)</dd>", "Transition : fiche, financement"),
+    ("transition", "<dt>Reconnaissance</dt><dd>Prestation non certifiante : synthèse et certificat de réalisation</dd>", "Transition : fiche, reconnaissance"),
+    ("equipe", "en présentiel ou, sur demande, en classe virtuelle synchrone ; présentiel exigé pour l'intelligence émotionnelle", "Équipe : fiche, modalités"),
+    ("equipe", "<dt>Reconnaissance</dt><dd>Formation non certifiante : certificat de réalisation remis à chaque stagiaire</dd>", "Équipe : fiche, reconnaissance"),
+    ("equipe", "peuvent être animées à distance en classe virtuelle synchrone", "Équipe : classe virtuelle synchrone"),
+    ("equipe", "Assistance technique et pédagogique : <a href=\"mailto:christophe.andreu@acc-coaching.fr\">christophe.andreu@acc-coaching.fr</a>, réponse sous 2 jours ouvrés.", "Équipe : assistance technique et pédagogique"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -153,11 +168,13 @@ INTERDITS_DOCUMENTS = [
 ]
 # Contenus attendus dans le texte des PDF publiés : (document, texte, intitulé)
 FAITS_DOCUMENTS = [
+    ("acc-programme-bilan-de-competences.pdf", "Version 20261101", "Programme du bilan : version du 01/11/2026"),
+    ("acc-programme-bilan-de-competences.pdf", "non certifiante", "Programme du bilan : type de reconnaissance"),
     ("acc-cgv-formations.pdf", "Version 20261101", "CGV formations : version du 01/11/2026"),
     ("acc-cgv-formations.pdf", "relatives à la médiation de la consommation (articles L.612-1 et suivants) ne s’appliquent pas", "CGV formations : médiation de la consommation non applicable aux professionnels"),
     ("acc-cgv-bilan-de-competences.pdf", "Version 20261031", "CGV du bilan : version du 31/10/2026"),
     ("acc-cgv-bilan-de-competences.pdf", "CM2C", "CGV du bilan : médiateur CM2C"),
-    ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261031", "Livret d'accueil : version du 31/10/2026"),
+    ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261101", "Livret d'accueil : version du 01/11/2026"),
     ("acc-livret-accueil-bilan-de-competences.pdf", "CM2C", "Livret d'accueil : médiateur CM2C"),
 ]
 
