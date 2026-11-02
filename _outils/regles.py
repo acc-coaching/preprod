@@ -40,6 +40,7 @@ INTERDITS = [
     (r"conserve la faculté de recourir", "Médiateur de la consommation nommé : CM2C (adhésion du 31/10/2026)"),
     (r"Sur le site définitif", "Mention provisoire de la page Contact retirée (01/11/2026)"),
     (r"Pour l'assistance technique à distance", "Assistance technique et pédagogique, réponse sous 2 jours ouvrés (01/11/2026)"),
+    (r"feuilles de présence et une évaluation à chaud", "Suivi du bilan : questionnaire à 6 mois ajouté (02/11/2026)"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
@@ -150,6 +151,8 @@ FAITS = [
     ("qualiopi", 'href="documents/acc-affiche-politique-accessibilite.pdf" target="_blank" rel="noopener">Affiche de notre politique d\'accessibilité <span>PDF</span>', "Qualiopi : affiche dans la liste des documents"),
     ("qualiopi", "ACC est engagé dans la démarche de progrès de la Ressource Handicap Formation Île-de-France.", "Qualiopi : démarche RHF"),
     ("qualiopi", "affiche de politique d'accessibilité (PDF)</a>", "Qualiopi : lien vers l'affiche dans la rubrique accessibilité"),
+    # Questionnaire de suivi à 6 mois du bilan — brief du 02/11/2026 (indicateur 30)
+    ("transition", "Le suivi repose sur les feuilles de présence, une évaluation à chaud par questionnaire de satisfaction à l'issue de la dernière séance, puis un questionnaire de suivi 6 mois après la fin du bilan, sur la mise en œuvre de votre projet.", "Transition : questionnaire de suivi à 6 mois"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -175,13 +178,15 @@ INTERDITS_DOCUMENTS = [
 FAITS_DOCUMENTS = [
     ("acc-affiche-politique-accessibilite.pdf", "est engagé dans la démarche d'accessibilité", "Affiche accessibilité : engagement RHF"),
     ("acc-affiche-politique-accessibilite.pdf", "Contactez notre référent handicap : Christophe Andreu", "Affiche accessibilité : référent handicap"),
-    ("acc-programme-bilan-de-competences.pdf", "Version 20261101", "Programme du bilan : version du 01/11/2026"),
+    ("acc-programme-bilan-de-competences.pdf", "Version 20261102", "Programme du bilan : version du 02/11/2026"),
+    ("acc-programme-bilan-de-competences.pdf", "questionnaire de suivi 6 mois après la fin du bilan", "Programme du bilan : questionnaire de suivi à 6 mois"),
     ("acc-programme-bilan-de-competences.pdf", "non certifiante", "Programme du bilan : type de reconnaissance"),
     ("acc-cgv-formations.pdf", "Version 20261101", "CGV formations : version du 01/11/2026"),
     ("acc-cgv-formations.pdf", "relatives à la médiation de la consommation (articles L.612-1 et suivants) ne s’appliquent pas", "CGV formations : médiation de la consommation non applicable aux professionnels"),
     ("acc-cgv-bilan-de-competences.pdf", "Version 20261031", "CGV du bilan : version du 31/10/2026"),
     ("acc-cgv-bilan-de-competences.pdf", "CM2C", "CGV du bilan : médiateur CM2C"),
-    ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261101", "Livret d'accueil : version du 01/11/2026"),
+    ("acc-livret-accueil-bilan-de-competences.pdf", "Version 20261102", "Livret d'accueil : version du 02/11/2026"),
+    ("acc-livret-accueil-bilan-de-competences.pdf", "questionnaire de suivi", "Livret d'accueil : questionnaire de suivi à 6 mois"),
     ("acc-livret-accueil-bilan-de-competences.pdf", "CM2C", "Livret d'accueil : médiateur CM2C"),
 ]
 
