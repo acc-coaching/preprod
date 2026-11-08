@@ -45,6 +45,7 @@ INTERDITS = [
     (r"(?#class=)cycle de vie|temps du cycle", "« Les temps forts du dirigeant » remplace « cycle de vie » (08/11/2026)"),
     (r"\bERAFP\b|\bNomura\b|Eversheds|Addleshaw|Coblence|\bEPAM\b|Rydge|Oh my cream|GRTgaz|\bGlady\b",
      "Références retirées ou renommées le 08/11/2026 (NaTran, Pluxee)"),
+    (r"McKinsey|HM Clause|Galileo", "Références retirées le 08/11/2026 (McKinsey remplacé par BearingPoint sur l'accueil)"),
     (r"Ashurst", "Ashurst Perkins Coie : à ajouter aux références vers mars-avril 2027, mission en cours"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
@@ -170,6 +171,9 @@ FAITS = [
     ("approche", "Executive Coach &amp; Strategic Mentor : un sparring-partner pour vos décisions", "Approche : rubrique sparring-partner"),
     ("approche", "Je vous dis toujours quelle casquette je porte", "Approche : transparence sur la posture (ICF)"),
     ("approche", "Je ne décide pas à votre place.", "Approche : pas de décision à la place du client"),
+    ("references", "LGH &amp; Associés · Ooslo · BearingPoint", "Références : Ooslo en dernier des cabinets d'avocats"),
+    ("accueil", "PwC · A&amp;O Shearman · Google", "Accueil : ordre des références conseil"),
+    ("references", '<h2 style="margin-bottom: 28px;">Références par secteur</h2>', "Références : espace sous le titre des secteurs"),
     ("references", "Certaines références sont issues de mes vingt ans de conseil en stratégie.", "Références : mention des références de conseil"),
     ("accueil", '<a class="btn btn-contour" href="/references">Voir toutes les références</a>', "Accueil : renvoi vers toutes les références"),
     ("accueil", "Et plus de 100 autres organisations.", "Accueil : mention des autres organisations"),
@@ -220,11 +224,11 @@ SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats"
 # Références validées le 08/11/2026 : (secteur, nombre de noms, premier nom, dernier nom)
 REFERENCES = [
     ("Banque, assurance, investissement", 21, "AXA", "SPE Capital"),
-    ("Conseil et cabinets d'avocats", 15, "A&amp;O Shearman", "Ooslo"),
+    ("Conseil et cabinets d'avocats", 14, "A&amp;O Shearman", "Scalian"),
     ("Tech, digital, télécoms, médias", 23, "Amazon", "Mediarithmics"),
     ("Luxe, consommation, distribution", 26, "LVMH", "JJA"),
-    ("Énergie, industrie, construction", 34, "TotalEnergies", "EIT Manufacturing"),
-    ("Services, transport, santé, éducation", 19, "Accor", "Ministère de la Défense"),
+    ("Énergie, industrie, construction", 33, "TotalEnergies", "EIT Manufacturing"),
+    ("Services, transport, santé, éducation", 18, "Accor", "Ministère de la Défense"),
 ]
 REFERENCES_ACCUEIL = 30
 
