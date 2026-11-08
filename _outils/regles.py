@@ -177,7 +177,7 @@ FAITS = [
     ("references", '<h2 style="margin-bottom: 28px;">Références par secteur</h2>', "Références : espace sous le titre des secteurs"),
     ("references", "Certaines références sont issues de mes vingt ans de conseil en stratégie.", "Références : mention des références de conseil"),
     ("accueil", '<a class="btn btn-contour" href="/references">Voir toutes les références</a>', "Accueil : renvoi vers toutes les références"),
-    ("accueil", "Et plus de 90 autres organisations.", "Accueil : mention des autres organisations"),
+    ("accueil", "Et plus de 100 autres organisations.", "Accueil : mention des autres organisations"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
