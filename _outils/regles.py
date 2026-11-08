@@ -153,6 +153,9 @@ FAITS = [
     ("qualiopi", "affiche de politique d'accessibilité (PDF)</a>", "Qualiopi : lien vers l'affiche dans la rubrique accessibilité"),
     # Questionnaire de suivi à 6 mois du bilan — brief du 02/11/2026 (indicateur 30)
     ("transition", "Le suivi repose sur les feuilles de présence, une évaluation à chaud par questionnaire de satisfaction à l'issue de la dernière séance, puis un questionnaire de suivi 6 mois après la fin du bilan, sur la mise en œuvre de votre projet.", "Transition : questionnaire de suivi à 6 mois"),
+    # Proposition de valeur — accueil validé le 08/11/2026
+    ("accueil", "Executive Coach &amp; Strategic Mentor", "Accueil : bandeau Executive Coach & Strategic Mentor"),
+    ("accueil", "Quand les enjeux stratégiques, humains et systémiques s'entremêlent, j'accompagne les dirigeants et leurs équipes à décider et à passer à l'action. En sparring-partner, j'allie l'écoute exigeante du coach et la rigueur du consultant.", "Accueil : paragraphe d'accroche"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
