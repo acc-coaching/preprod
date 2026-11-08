@@ -173,7 +173,8 @@ FAITS = [
     ("approche", "Je vous dis toujours quelle casquette je porte", "Approche : transparence sur la posture (ICF)"),
     ("approche", "Je ne décide pas à votre place.", "Approche : pas de décision à la place du client"),
     ("references", "LGH &amp; Associés · Ooslo · BearingPoint", "Références : Ooslo en dernier des cabinets d'avocats"),
-    ("accueil", "BearingPoint · Deloitte · Capgemini · A&amp;O Shearman · Google", "Accueil : références conseil (Capgemini remplace PwC)"),
+    # Liste des 30 de l'accueil revue le 09/11/2026 : Air France, Deloitte, Louis Vuitton, Cartier, Google, Publicis retirés ; Hilti, JJA, Pearls Consulting, Keensight, Veolia, EPITA ajoutés
+    ("accueil", '<p class="noms">AXA\u00a0· BNP Paribas\u00a0· Société Générale\u00a0· Crédit Agricole\u00a0· HSBC\u00a0· Allianz\u00a0· Keensight\u00a0· BearingPoint\u00a0· Capgemini\u00a0· Pearls Consulting\u00a0· A&amp;O Shearman\u00a0· Amazon\u00a0· Meta\u00a0· LVMH\u00a0· Hermès\u00a0· L\'Oréal\u00a0· Pernod Ricard\u00a0· JJA\u00a0· TotalEnergies\u00a0· EDF\u00a0· Saint-Gobain\u00a0· Schneider Electric\u00a0· Air Liquide\u00a0· Safran\u00a0· Veolia\u00a0· Hilti\u00a0· Accor\u00a0· Sanofi\u00a0· École polytechnique\u00a0· EPITA</p>', "Accueil : liste des 30 références revue le 09/11/2026"),
     ("references", '<h2 style="margin-bottom: 28px;">Références par secteur</h2>', "Références : espace sous le titre des secteurs"),
     ("references", "Certaines références sont issues de mes vingt ans de conseil en stratégie.", "Références : mention des références de conseil"),
     ("accueil", '<a class="btn btn-contour" href="/references">Voir toutes les références</a>', "Accueil : renvoi vers toutes les références"),
