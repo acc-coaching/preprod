@@ -149,9 +149,9 @@ def controles_contenu(r, dossier, sources):
         visibles = re.sub(r'<span class="sr-only">.*?</span>', " ", sources.get(cle, ""))
         r.verifier(re.search(r">\s*Temps [1-4]\s*<", visibles) is None,
                    f"Contenu — pas de mention « Temps n » visible ({cle})", "mention encore affichée")
-    for cle, n in (("prise-de-poste", 1), ("leadership", 2), ("equipe", 3), ("transition", 4)):
-        r.verifier(f"Temps {n} du cycle de vie du dirigeant" in sources.get(cle, ""),
-                   f"Contenu — mention de contexte conservée ({cle})", f"« Temps {n} du cycle de vie du dirigeant » absent")
+    for cle, rang in (("prise-de-poste", "Premier"), ("leadership", "Deuxième"), ("equipe", "Troisième"), ("transition", "Quatrième")):
+        r.verifier(f"{rang} temps fort du dirigeant" in sources.get(cle, ""),
+                   f"Contenu — mention de contexte conservée ({cle})", f"« {rang} temps fort du dirigeant » absent")
 
     acc = norm(texte_visible(sources.get("accueil", "")))
     r.verifier("L'alliance du conseil, du coaching et de la formation" in acc, "Contenu — signature inchangée sur l'accueil", "signature modifiée")
