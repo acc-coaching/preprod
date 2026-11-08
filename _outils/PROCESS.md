@@ -81,6 +81,8 @@ et le `robots.txt` de prod, puis relance tous les tests en mode prod. Sans l'opt
 sitemap répond, indexation conforme à l'environnement, canonique correcte, documents
 téléchargeables présents, outils internes non exposés.
 
+Le fichier Excel de suivi des versions est mis à jour à chaque mise en production et renommé à la date de cette mise à jour (`AAAAMMJJ-ACC-Site internet-Suivi des versions.xlsx`).
+
 `journal.md` trace chaque mise à jour : date, contenu, commits préprod et prod, résultats
 des tests.
 
