@@ -102,6 +102,8 @@ registre des traitements.
 
 **Numéro de TVA.** `FR 02 880 612 395`, affiché dans les mentions légales, à vérifier.
 
+**Ashurst Perkins Coie.** Mission en cours : à ajouter aux références (Conseil et cabinets d'avocats) vers mars-avril 2027, après accord de Christophe. Retirer alors la règle qui l'interdit dans `regles.py`.
+
 **Formulaire Tally.** À intégrer en cadre dans la page Contact plutôt qu'en lien sortant.
 
 **Séance photo.** Prévue en janvier 2027 ; les deux portraits actuels seront remplacés.

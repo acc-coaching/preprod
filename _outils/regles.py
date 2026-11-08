@@ -43,6 +43,9 @@ INTERDITS = [
     (r"feuilles de présence et une évaluation à chaud", "Suivi du bilan : questionnaire à 6 mois ajouté (02/11/2026)"),
     # (?#class=) : commentaire d'expression qui fait porter le contrôle sur le HTML complet, métadonnées comprises
     (r"(?#class=)cycle de vie|temps du cycle", "« Les temps forts du dirigeant » remplace « cycle de vie » (08/11/2026)"),
+    (r"\bERAFP\b|\bNomura\b|Eversheds|Addleshaw|Coblence|\bEPAM\b|Rydge|Oh my cream|GRTgaz|\bGlady\b",
+     "Références retirées ou renommées le 08/11/2026 (NaTran, Pluxee)"),
+    (r"Ashurst", "Ashurst Perkins Coie : à ajouter aux références vers mars-avril 2027, mission en cours"),
     (r"procedure-prevention", "La procédure de prévention est interne, non publiée (décision du 25/10/2026)"),
     (r"personnes accompagnées depuis 2023", "Libellé de la fiche Information du public : « bilans terminés »"),
     (r"8 octobre 2026|4 août 2025", "Dates d'indicateurs périmées (màj 19/10/2026 et 06/10/2026)"),
@@ -167,6 +170,9 @@ FAITS = [
     ("approche", "Executive Coach &amp; Strategic Mentor : un sparring-partner pour vos décisions", "Approche : rubrique sparring-partner"),
     ("approche", "Je vous dis toujours quelle casquette je porte", "Approche : transparence sur la posture (ICF)"),
     ("approche", "Je ne décide pas à votre place.", "Approche : pas de décision à la place du client"),
+    ("references", "Certaines références sont issues de mes vingt ans de conseil en stratégie.", "Références : mention des références de conseil"),
+    ("accueil", '<a class="btn btn-contour" href="/references">Voir toutes les références</a>', "Accueil : renvoi vers toutes les références"),
+    ("accueil", "Et plus de 100 autres organisations.", "Accueil : mention des autres organisations"),
     ("equipe", "Mis à jour le 6 octobre 2026", "Équipe : date des indicateurs formations en direct"),
     ("equipe", "<b>201</b>", "Équipe : formation au management en sous-traitance"),
     ("equipe", "Mis à jour le 25 octobre 2026", "Équipe : date des indicateurs en sous-traitance"),
@@ -208,8 +214,19 @@ FAITS_DOCUMENTS = [
 AUTEURS_ADMIS = {"", "ACC", "Christophe Andreu", "Christophe ANDREU"}
 
 # Ordre des secteurs sur la page Références
-SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats", "Tech, digital, télécoms",
-            "Luxe, consommation, distribution", "Énergie, industrie, construction", "Services, santé, éducation"]
+SECTEURS = ["Banque, assurance, investissement", "Conseil et cabinets d'avocats", "Tech, digital, télécoms, médias",
+            "Luxe, consommation, distribution", "Énergie, industrie, construction", "Services, transport, santé, éducation"]
+
+# Références validées le 08/11/2026 : (secteur, nombre de noms, premier nom, dernier nom)
+REFERENCES = [
+    ("Banque, assurance, investissement", 21, "AXA", "SPE Capital"),
+    ("Conseil et cabinets d'avocats", 15, "A&amp;O Shearman", "Ooslo"),
+    ("Tech, digital, télécoms, médias", 23, "Amazon", "Mediarithmics"),
+    ("Luxe, consommation, distribution", 26, "LVMH", "JJA"),
+    ("Énergie, industrie, construction", 34, "TotalEnergies", "EIT Manufacturing"),
+    ("Services, transport, santé, éducation", 19, "Accor", "Ministère de la Défense"),
+]
+REFERENCES_ACCUEIL = 30
 
 # Écarts admis : signalés en ALERTE sans bloquer.
 # Clé : début de l'intitulé de la règle. Valeur : (décision datée, environnements où l'écart est admis).

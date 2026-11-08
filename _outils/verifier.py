@@ -161,6 +161,21 @@ def controles_contenu(r, dossier, sources):
     secteurs = [norm(s) for s in re.findall(r'<div class="secteur"><h3>(.*?)</h3>', sources.get("references", ""))]
     r.verifier(secteurs == regles.SECTEURS, "Contenu — références : ordre des six secteurs", f"ordre trouvé : {secteurs}")
 
+    # Références : contenu de chaque secteur et longueur de la liste d'accueil
+    ref = sources.get("references", "")
+    for secteur, nombre, premier, dernier in getattr(regles, "REFERENCES", []):
+        m = re.search(r'<div class="secteur"><h3>' + re.escape(secteur.replace("'", "&#x27;")) + r'</h3><p>(.*?)</p>', ref) \
+            or re.search(r'<div class="secteur"><h3>' + re.escape(secteur) + r'</h3><p>(.*?)</p>', ref)
+        noms = [n.strip() for n in m.group(1).split("·")] if m else []
+        r.verifier(len(noms) == nombre and noms[:1] == [premier] and noms[-1:] == [dernier],
+                   f"Contenu — références : {secteur}", f"{len(noms)} noms, de {noms[:1]} à {noms[-1:]}")
+        doublons = sorted({n for n in noms if noms.count(n) > 1})
+        r.verifier(not doublons, f"Contenu — références sans doublon : {secteur}", ", ".join(doublons))
+    if hasattr(regles, "REFERENCES_ACCUEIL"):
+        m = re.search(r'<p class="noms">(.*?)</p>', sources.get("accueil", ""))
+        n = len(m.group(1).split("·")) if m else 0
+        r.verifier(n == regles.REFERENCES_ACCUEIL, "Contenu — accueil : nombre de références", f"{n} noms au lieu de {regles.REFERENCES_ACCUEIL}")
+
     off = sources.get("offres", "")
     col = re.search(r'<div class="catalogue">(.*?)<section class="cat-form"', off, flags=re.S)
     r.verifier(col and "Débriefing psychométrique" not in col.group(1), "Contenu — catalogue : débriefing psychométrique hors des colonnes", "présent dans les colonnes")
